@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  gap: 40%;
+  color: #a4a4a4;
+  border-top: 2px solid #de00bb;
+  margin-top: 50px;
+  font-weight: 200;
+  line-height: 22px;
+  letter-spacing: 0em;
+  font-size: 11px;
+}
+
+.first {
+  margin-left: 165px;
+  max-width: 300px;
+}
+
+.first > p {
+  font-size: 16px;
+  color: aqua;
+}
+
+.second {
+  max-width: 300px;
+  margin-right: 50px;
+}

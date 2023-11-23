@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 480px;
+  margin-left: 165px;
+  margin-bottom: 0px;
+  padding-top: 50px;
+}
+
+.container > img {
+  margin-bottom: 20px;
+}
+
+.astrocont {
+  position: absolute;
+  margin-left: 900px;
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(
+    45deg,
+    rgba(19, 17, 25, 1) 0%,
+    rgba(29, 30, 33, 1) 35%,
+    rgb(0, 19, 113) 100%
+  );
+  border: none;
+  border-radius: 360px;
+  box-shadow: 5px 5px 5px rgba(19, 17, 25, 1);
+}
+
+.astrocont > img {
+  transform: rotate(341deg);
+}

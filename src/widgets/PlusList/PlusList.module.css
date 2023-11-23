@@ -1,0 +1,32 @@
+.pluslist {
+  display: flex;
+  flex-direction: column;
+}
+
+.pluslist > div {
+  margin: 10px 0px;
+  width: 350px;
+  height: 62px;
+  border-radius: 15px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(12, 31, 113, 1) 35%,
+    rgba(6, 43, 51, 1) 100%
+  );
+  border: 1px solid rgb(0, 255, 255);
+  display: flex;
+  justify-content: center;
+}
+
+.pluslist > div > p {
+  color: rgb(0, 255, 255);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  margin: 20px 20px;
+  padding: 0 15px;
+  text-align: center;
+}

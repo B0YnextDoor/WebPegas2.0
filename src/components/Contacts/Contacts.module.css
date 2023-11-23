@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: 165px;
+  width: 100%;
+}
+
+.container > img {
+  margin-bottom: 20px;
+}
+
+.contactsinfo {
+  display: flex;
+  align-items: center;
+  gap: 150px;
+}
+
+.contactsinfo > img {
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.4);
+}

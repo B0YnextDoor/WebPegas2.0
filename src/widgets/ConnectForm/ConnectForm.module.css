@@ -1,0 +1,64 @@
+.container {
+  max-width: 600px;
+}
+
+.container > p {
+  color: #bf1650;
+}
+
+.container > p::before {
+  display: inline;
+  content: "⚠ ";
+}
+
+.container > input[type="text"] {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 300;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  border-bottom: 2px solid #de00bb;
+}
+
+.container > input[type="text"]:focus {
+  outline: none;
+}
+
+.container > label {
+  line-height: 2;
+  text-align: left;
+  display: block;
+  margin-bottom: 13px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 200;
+  background: -webkit-linear-gradient(-45deg, #de00bb 0%, #00d8e6 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container > input[type="submit"] {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  width: 200px;
+  height: 40px;
+  background: #de00bb;
+  color: #fff;
+  border-radius: 20px;
+  border: none;
+  transition-duration: 0.5s;
+}
+
+.container > input[type="submit"]:hover {
+  box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.7);
+  font-size: 18px;
+}

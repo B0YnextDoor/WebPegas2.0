@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: 165px;
+  width: 100%;
+  min-height: 590px;
+}
+
+.container > img {
+  margin-bottom: 20px;
+}
+
+.container > p {
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 22px;
+  letter-spacing: 0em;
+  color: rgb(189, 230, 230);
+}
+
+.astrocont {
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 500px;
+  width: 500px;
+  height: 500px;
+}

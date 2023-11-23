@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: 165px;
+  width: 100%;
+}
+
+.container > img {
+  margin-bottom: 20px;
+}
+
+.pluslist {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  z-index: 1;
+}
+
+.astrocont {
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 750px;
+  width: 600px;
+  height: 600px;
+}
