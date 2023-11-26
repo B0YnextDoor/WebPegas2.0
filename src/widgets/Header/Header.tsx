@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./Header.module.css";
 import { HeaderNav } from "./NavBar";
 
@@ -14,7 +15,7 @@ export const Header = () => {
       <ul className={styles.navbar}>
         {HeaderNav.map((el) => (
           <li key={el}>
-            <a href="#">{el}</a>
+            <Link to="/">{el}</Link>
           </li>
         ))}
       </ul>

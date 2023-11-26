@@ -1,0 +1,26 @@
+.container {
+  background-color: rgba(19, 17, 25, 1);
+  height: 100vh;
+  width: 100vw;
+}
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.portfolio > h2 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  align-self: center;
+  background: -webkit-linear-gradient(
+    45deg,
+    #de00bb 2.82%,
+    #8a6cf8 44.93%,
+    #00d8e6 95.55%
+  );
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

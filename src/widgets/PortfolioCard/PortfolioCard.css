@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(19, 17, 25, 1);
+}
+
+.container > button {
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btncont {
+  display: inline-flex;
+  justify-content: center;
+}
+
+.portbtn > button {
+  margin: 20px;
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.portbtn > button:hover {
+  box-shadow: 4px 4px 4px rgba(186, 10, 186, 0.5);
+}
+
+.spreadList {
+  display: grid;
+  grid-template-columns: repeat(3, 0.5fr);
+  background-color: rgba(19, 17, 25, 1);
+}
+
+.spreadList > img {
+  margin: 10px;
+}
