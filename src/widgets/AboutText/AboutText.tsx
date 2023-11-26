@@ -1,13 +1,8 @@
+import "./AboutText.css";
+
 export const AboutText = () => {
   return (
-    <div
-      style={{
-        maxWidth: "760px",
-        fontSize: "22px",
-        fontWeight: "400",
-        zIndex: "1",
-      }}
-    >
+    <div className="about">
       <p>
         Вы ищете профессиональную команду, которая может создать для вас
         мобильное приложение, сайт или нейросеть? Вы хотите получить продукт,

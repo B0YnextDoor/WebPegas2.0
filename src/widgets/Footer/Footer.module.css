@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  gap: 40%;
+  gap: 30%;
   color: #a4a4a4;
   border-top: 2px solid #de00bb;
   margin-top: 50px;
@@ -12,7 +12,7 @@
 
 .first {
   margin-left: 165px;
-  max-width: 300px;
+  max-width: 500px;
 }
 
 .first > p {
@@ -23,4 +23,46 @@
 .second {
   max-width: 300px;
   margin-right: 50px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    gap: 27%;
+  }
+  .first {
+    margin-left: 100px;
+  }
+  .first > p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1000px) {
+  .container {
+    gap: 20%;
+  }
+  .first {
+    margin-left: 100px;
+    white-space: nowrap;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    gap: 2%;
+    font-size: 9px;
+  }
+  .first {
+    margin-left: 20px;
+  }
+  .first > p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    gap: 0;
+    flex-direction: column-reverse;
+  }
+  .first {
+    margin-left: 0;
+  }
 }

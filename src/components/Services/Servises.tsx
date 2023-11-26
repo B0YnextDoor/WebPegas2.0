@@ -7,7 +7,7 @@ export const Services = () => {
       <img src="/services.svg" alt="" width={186} height={59} />
       <ServicesList />
       <div className={styles.astrocont}>
-        <img src="/astronaut.png" alt="" width={200} height={200} />
+        <img src="/astronaut.png" alt="" width={250} height={250} />
       </div>
     </div>
   );

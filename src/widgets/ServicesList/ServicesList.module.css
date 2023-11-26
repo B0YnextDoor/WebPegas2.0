@@ -1,5 +1,5 @@
 .serviceslist {
-  width: 1217.78px;
+  width: 90%;
   display: grid;
   grid-template-columns: repeat(3, 350px);
   z-index: 1;
@@ -55,4 +55,93 @@ p {
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 1200px) {
+  .serviceslist {
+    grid-template-columns: repeat(3, 300px);
+  }
+  .service > img {
+    width: 28px;
+    height: 28px;
+  }
+  .service > h3 {
+    font-size: 22px;
+  }
+  .service > h4 {
+    font-size: 16px;
+  }
+  .service > div > p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1000px) {
+  .serviceslist {
+    grid-template-columns: repeat(3, 250px);
+  }
+  .service > div {
+    max-width: 240px;
+  }
+  .service > img {
+    width: 19.6px;
+    height: 19.6px;
+  }
+  .service > h3 {
+    font-size: 20px;
+  }
+  .service > h4 {
+    font-size: 14px;
+  }
+  .service > div > p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .serviceslist {
+    grid-template-columns: repeat(3, 210px);
+  }
+  .service > div {
+    max-width: 200px;
+  }
+  .service > img {
+    width: 13.72px;
+    height: 13.72px;
+  }
+  .service > h3 {
+    font-size: 18px;
+  }
+  .service > h4 {
+    font-size: 14px;
+  }
+  .service > div > p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 642px) {
+  .serviceslist {
+    grid-template-columns: repeat(2, 200px);
+  }
+  .service {
+    max-width: 200px;
+    min-height: 170px;
+    max-height: 196px;
+  }
+}
+@media (max-width: 480px) {
+  .serviceslist {
+    grid-template-columns: repeat(1, 180px);
+    justify-content: center;
+    justify-items: center;
+  }
+  .service > img,
+  h3,
+  p {
+    margin-bottom: 1px;
+  }
+  .service {
+    min-height: 130px;
+  }
+  .service > div {
+    min-height: auto;
+  }
 }

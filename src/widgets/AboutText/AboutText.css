@@ -1,0 +1,31 @@
+.about {
+  text-align: left;
+  max-width: 760px;
+  font-size: 22px;
+  font-weight: 400;
+  z-index: 1;
+}
+
+@media (max-width: 1200px) {
+  .about {
+    font-size: 18px;
+    max-width: 660px;
+  }
+}
+@media (max-width: 1000px) {
+  .about {
+    font-size: 16px;
+    max-width: 560px;
+  }
+}
+@media (max-width: 768px) {
+  .about {
+    font-size: 14px;
+    max-width: 460px;
+  }
+}
+@media (max-width: 480px) {
+  .about {
+    max-width: 100%;
+  }
+}

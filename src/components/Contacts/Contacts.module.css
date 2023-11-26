@@ -20,3 +20,62 @@
   border-radius: 10px;
   box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.4);
 }
+
+@media (max-width: 1200px) {
+  .container {
+    margin-left: 100px;
+    margin-top: -20px;
+  }
+  .container > img {
+    width: 140px;
+    height: 30.8px;
+  }
+  .contactsinfo > img {
+    width: 350px;
+    height: 350px;
+  }
+}
+@media (max-width: 1000px) {
+  .container {
+    margin-left: 10px;
+  }
+  .container > img {
+    width: 126px;
+    height: 27.72px;
+  }
+  .contactsinfo > img {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    margin-left: 5px;
+  }
+  .container > img {
+    width: 113.4px;
+    height: 24.948px;
+  }
+  .contactsinfo {
+    gap: 50px;
+  }
+  .contactsinfo > img {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media (max-width: 559px) {
+  .container {
+    margin-left: 0px;
+  }
+  .container > img {
+    align-self: center;
+  }
+  .contactsinfo {
+    flex-direction: column-reverse;
+  }
+  .contactsinfo > img {
+    width: 350px;
+    height: 350px;
+  }
+}

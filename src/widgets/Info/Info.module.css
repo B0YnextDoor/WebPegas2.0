@@ -23,7 +23,7 @@
 }
 
 .container > h2 {
-  margin: 20px 10px;
+  margin: 30px 10px;
   font-size: 24px;
   font-weight: 600;
   line-height: 29px;
@@ -77,4 +77,121 @@
 .buttoncontainer > button:hover {
   font-size: 22px;
   box-shadow: 4px 4px 4px rgba(126, 17, 181, 0.7);
+}
+
+@media (max-width: 1200px) {
+  .container {
+    margin-top: 90px;
+  }
+  .container > img {
+    width: 527px;
+    height: 70px;
+  }
+  .agency {
+    width: 600px;
+    height: 88px;
+  }
+  .container > h2 {
+    margin: 25px 10px;
+    font-size: 22px;
+  }
+  .buttoncontainer {
+    width: 287.1px;
+    height: 54.9px;
+  }
+  .buttoncontainer > button {
+    font-size: 18px;
+    width: 315px;
+    height: 45px;
+  }
+  .buttoncontainer > button:hover {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1000px) {
+  .container {
+    margin-top: 60px;
+  }
+  .container > img {
+    width: 480px;
+    height: 63.76px;
+  }
+  .agency {
+    width: 570px;
+    height: 77px;
+  }
+  .container > h2 {
+    margin: 40px 10px;
+    font-size: 20px;
+  }
+  .buttoncontainer {
+    width: 229.68px;
+    height: 43.92px;
+  }
+  .buttoncontainer > button {
+    font-size: 16px;
+    width: 250px;
+    height: 35px;
+  }
+  .buttoncontainer > button:hover {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    margin-top: 45px;
+  }
+  .container > img {
+    width: 350px;
+    height: 46.49px;
+  }
+  .agency {
+    width: 380px;
+    height: 60px;
+  }
+  .container > h2 {
+    margin: 20px 10px;
+    font-size: 18px;
+  }
+  .buttoncontainer {
+    width: 183.744px;
+    height: 35.136px;
+  }
+  .buttoncontainer > button {
+    font-size: 14px;
+    width: 200px;
+    height: 30px;
+  }
+  .buttoncontainer > button:hover {
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    margin-top: 25px;
+  }
+  .container > img {
+    width: 300px;
+    height: 39.85px;
+  }
+  .agency {
+    width: 340px;
+    height: 55px;
+  }
+  .container > h2 {
+    margin: 15px 10px;
+    font-size: 16px;
+  }
+  .buttoncontainer {
+    width: 183.744px;
+    height: 35.136px;
+  }
+  .buttoncontainer > button {
+    font-size: 14px;
+    width: 200px;
+    height: 30px;
+  }
+  .buttoncontainer > button:hover {
+    font-size: 16px;
+  }
 }
