@@ -69,17 +69,6 @@ export const Portfolios: PortfolioType[] = [
     name: "Landing Page",
     examples: [
       {
-        path: "/src/assets/Landings/Boldo",
-        height: 570,
-        infoImgs: [
-          { path: "1.jpg", height: 375 },
-          { path: "2.jpg", height: 375 },
-          { path: "3.jpg", height: 444 },
-          { path: "4.jpg", height: 453 },
-          { path: "5.jpg", height: 587.54 },
-        ],
-      },
-      {
         path: "/src/assets/Landings/Fecit",
         height: 450,
         infoImgs: [
@@ -146,9 +135,15 @@ export const Portfolios: PortfolioType[] = [
     name: "Создание автоворонок",
     examples: [
       {
-        path: "",
-        height: 0,
-        infoImgs: [],
+        path: "/src/assets/Funnels/Boldo",
+        height: 570,
+        infoImgs: [
+          { path: "1.jpg", height: 375 },
+          { path: "2.jpg", height: 375 },
+          { path: "3.jpg", height: 444 },
+          { path: "4.jpg", height: 453 },
+          { path: "5.jpg", height: 587.54 },
+        ],
       },
     ],
   },
