@@ -3,7 +3,6 @@
   flex-direction: column;
   position: relative;
   margin-left: 165px;
-  width: 100%;
   margin-bottom: 50px;
   margin-top: 50px;
 }
@@ -24,8 +23,8 @@
   position: absolute;
   margin-top: 80px;
   margin-left: 500px;
-  width: 550px;
-  height: 550px;
+  width: 500px;
+  height: 500px;
 }
 
 @media (max-width: 1200px) {
@@ -90,6 +89,12 @@
   }
   .astrocont {
     margin-left: 150px;
+    width: 250px;
+    height: 250px;
+  }
+  .astrocont > img {
+    width: 250px;
+    height: 250px;
   }
 }
 @media (max-width: 383px) {

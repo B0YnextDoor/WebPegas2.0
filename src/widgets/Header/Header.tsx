@@ -1,8 +1,40 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import styles from "./Header.module.css";
 import { HeaderNav } from "./NavBar";
+import { animateScroll as scroll } from "react-scroll";
 
 export const Header = () => {
+  const navigate = useNavigate();
+  const handleClick = (e: any) => {
+    e.preventDefault(e.target.innerHTML);
+    console.log();
+    switch (e.target.innerHTML) {
+      case "Услуги": {
+        navigate("/");
+        scroll.scrollTo(800);
+        break;
+      }
+      case "О нас": {
+        navigate("/");
+        scroll.scrollTo(1300);
+        break;
+      }
+      case "Связаться с нами": {
+        navigate("/");
+        scroll.scrollTo(1970);
+        break;
+      }
+      case "Контакты": {
+        navigate("/");
+        scroll.scrollTo(2300);
+        break;
+      }
+      default: {
+        navigate("/");
+        break;
+      }
+    }
+  };
   return (
     <div className={styles.header}>
       <img
@@ -15,7 +47,7 @@ export const Header = () => {
       <ul className={styles.navbar}>
         {HeaderNav.map((el) => (
           <li key={el}>
-            <Link to="/">{el}</Link>
+            <button onClick={(e) => handleClick(e)}>{el}</button>
           </li>
         ))}
       </ul>

@@ -10,7 +10,7 @@
   flex-direction: column;
   justify-content: left;
   min-height: 196px;
-  width: 282px;
+  width: 250px;
   margin-right: 20px;
   padding-right: 5px;
 }
@@ -104,6 +104,9 @@ p {
 @media (max-width: 768px) {
   .serviceslist {
     grid-template-columns: repeat(3, 210px);
+  }
+  .service {
+    width: 200px;
   }
   .service > div {
     max-width: 200px;

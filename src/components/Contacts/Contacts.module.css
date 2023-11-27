@@ -3,7 +3,6 @@
   flex-direction: column;
   position: relative;
   margin-left: 165px;
-  width: 100%;
 }
 
 .container > img {
@@ -66,6 +65,7 @@
 }
 @media (max-width: 559px) {
   .container {
+    margin-top: 30px;
     margin-left: 0px;
   }
   .container > img {

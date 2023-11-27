@@ -3,7 +3,6 @@
   flex-direction: column;
   position: relative;
   margin-left: 165px;
-  width: 100%;
 }
 
 .container > img {
@@ -19,9 +18,7 @@
 .astrocont {
   position: absolute;
   margin-top: 150px;
-  margin-left: 650px;
-  width: 550px;
-  height: 550px;
+  margin-left: 670px;
 }
 
 @media (max-width: 1200px) {
@@ -34,7 +31,11 @@
     height: 41.3px;
   }
   .astrocont {
-    margin-left: 515px;
+    margin-left: 570px;
+  }
+  .astrocont > img {
+    width: 330px;
+    height: 330px;
   }
 }
 @media (max-width: 1000px) {
@@ -47,6 +48,12 @@
   }
   .astrocont {
     margin-top: 170px;
+    margin-left: 470px;
+  }
+}
+@media (max-width: 810px) {
+  .astrocont {
+    margin-top: 290px;
     margin-left: 370px;
   }
 }
@@ -59,14 +66,12 @@
     height: 33.453px;
   }
   .astrocont {
-    margin-top: 300px;
+    margin-top: 320px;
     margin-left: 230px;
-    width: 350px;
-    height: 350px;
   }
   .astrocont > img {
-    width: 300px;
-    height: 300px;
+    width: 240px;
+    height: 240px;
   }
 }
 @media (max-width: 480px) {
@@ -76,18 +81,6 @@
   .container > img {
     align-self: center;
   }
-  .astrocont {
-    margin-top: 350px;
-    margin-left: 230px;
-    width: 250px;
-    height: 250px;
-  }
-  .astrocont > img {
-    width: 250px;
-    height: 250px;
-  }
-}
-@media (max-width: 420px) {
   .astrocont {
     display: none;
   }

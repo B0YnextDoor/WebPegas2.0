@@ -1,3 +1,4 @@
+import { CustomButton } from "../CustomButton/CustomButton";
 import styles from "./Info.module.css";
 
 export const Info = () => {
@@ -6,11 +7,9 @@ export const Info = () => {
       <img src="/digitagency.svg" alt="" width={567} height={78} />
       <div className={styles.agency}></div>
       <h2>Ваш надежный партнер в мире технологий</h2>
-      <div className={styles.buttoncontainer}>
-        <button>
-          <span>Связаться с нами</span>
-        </button>
-      </div>
+      <CustomButton>
+        <span>Связаться с нами</span>
+      </CustomButton>
     </div>
   );
 };

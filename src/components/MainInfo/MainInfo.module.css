@@ -1,5 +1,5 @@
 .container {
-  width: 100%;
+  width: 100vw;
   height: 857px;
   background-image: url("background.jpg");
   background-position: center;
@@ -25,5 +25,10 @@
 @media (max-width: 480px) {
   .container {
     height: 600px;
+  }
+}
+@media (max-width: 375px) {
+  .container {
+    height: 500px;
   }
 }

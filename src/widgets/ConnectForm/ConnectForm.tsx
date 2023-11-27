@@ -18,17 +18,31 @@ export const ConnectForm = () => {
       <label>Ваше имя:</label>
       <input
         type="text"
-        {...register("firstName", { required: true })}
+        {...register("firstName", {
+          required: { value: true, message: "Заполните это поле!" },
+        })}
         placeholder="Введите имя"
       />
-      {errors?.firstName?.type === "required" && <p>Заполните это поле!</p>}
+      {errors?.firstName?.type === "required" && (
+        <p>{errors.firstName.message}</p>
+      )}
       <label>Ваш номер телефона:</label>
       <input
         type="text"
-        {...register("phoneNumber", { required: true })}
+        {...register("phoneNumber", {
+          required: { value: true, message: "Заполните это поле!" },
+          pattern: {
+            value:
+              /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im,
+            message: "Неверный номер телефона!",
+          },
+        })}
         placeholder="Введите номер"
       />
-      {errors?.firstName?.type === "required" && <p>Заполните это поле!</p>}
+      {(errors?.phoneNumber?.type === "required" ||
+        errors?.phoneNumber?.type == "pattern") && (
+        <p>{errors.phoneNumber.message}</p>
+      )}
       <input type="submit" value="Связаться с нами" />
     </form>
   );

@@ -98,11 +98,24 @@
   }
   .container > div > p {
     font-size: 14px;
-    margin: 17px 5px;
-    padding: 3px 5px;
+    margin: 15px 3px;
+    padding: 3px 3px;
   }
   .container > div > img {
-    width: 15;
-    height: 15;
+    width: 13;
+    height: 13;
+  }
+}
+@media (max-width: 376px) {
+  .container > div {
+    height: 55px;
+  }
+  .container > div > p {
+    font-size: 12px;
+    margin: 10px 1px;
+  }
+  .container > div > img {
+    width: 10;
+    height: 10;
   }
 }

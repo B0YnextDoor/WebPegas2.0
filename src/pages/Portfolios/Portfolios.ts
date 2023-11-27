@@ -85,9 +85,17 @@ export const Portfolios: PortfolioType[] = [
     name: "Мобильная разработка",
     examples: [
       {
-        path: "",
-        height: 0,
+        path: "/src/assets/MobileDev/WeatherApp",
+        height: 694.72,
         infoImgs: [],
+      },
+      {
+        path: "/src/assets/MobileDev/PizzaApp",
+        height: 300,
+        infoImgs: [
+          { path: "1.jpg", height: 533.3 },
+          { path: "2.jpg", height: 374.86 },
+        ],
       },
     ],
   },
@@ -95,8 +103,13 @@ export const Portfolios: PortfolioType[] = [
     name: "Обучение нейросетей",
     examples: [
       {
-        path: "",
-        height: 0,
+        path: "/src/assets/NeuralNets/Generic",
+        height: 588.61,
+        infoImgs: [],
+      },
+      {
+        path: "/src/assets/NeuralNets/Semili",
+        height: 582,
         infoImgs: [],
       },
     ],

@@ -8,7 +8,7 @@ export const AboutUs = () => {
       <img src="about-us.png" alt="" width={150} height={59} />
       <AboutText />
       <div className={styles.astrocont}>
-        <img src="astronaut2.png" alt="" width={500} height={500} />
+        <img src="astronaut2.png" alt="" width={350} height={350} />
       </div>
       <PlusList />
     </div>

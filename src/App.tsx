@@ -1,6 +1,5 @@
 import "./App.css";
 import { AboutUs } from "./components/AboutUs/AboutUs";
-import { ConnectWihtUs } from "./components/ConnectWithUs/ConnectWithUs";
 import { Contacts } from "./components/Contacts/Contacts";
 import { MainInfo } from "./components/MainInfo/MainInfo";
 import { Services } from "./components/Services/Servises";
@@ -13,7 +12,6 @@ function App() {
       <main>
         <Services />
         <AboutUs />
-        <ConnectWihtUs />
         <Contacts />
         <Footer />
       </main>
