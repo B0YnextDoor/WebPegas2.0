@@ -1,7 +1,7 @@
 .container {
   width: 100vw;
   height: 857px;
-  background-image: url("background.jpg");
+  background-image: url("../../static/background.jpg");
   background-position: center;
   overflow: hidden;
   overflow-x: hidden;

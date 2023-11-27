@@ -1,10 +1,12 @@
-.container {
+.cardscontainer {
   display: flex;
   flex-direction: column;
-  background-color: rgba(19, 17, 25, 1);
+  border: none;
+  background-image: url("../../static/portfoliobckground.jpg");
+  background-position: center;
 }
 
-.container > button {
+.cardscontainer > button {
   background: transparent;
   outline: none;
   border: none;
@@ -30,11 +32,52 @@
 }
 
 .spreadList {
+  border: none;
   display: grid;
   grid-template-columns: repeat(3, 0.5fr);
-  background-color: rgba(19, 17, 25, 1);
+  background-image: url("../../static/portfoliobckground.jpg");
+  background-position: center;
 }
 
 .spreadList > img {
   margin: 10px;
+}
+
+@media (max-width: 1200px) {
+  .btncont {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    gap: 30px;
+  }
+}
+@media (max-width: 1000px) {
+  .btncont {
+    justify-content: left;
+  }
+  .spreadList {
+    grid-template-columns: repeat(2, 0.5fr);
+  }
+}
+@media (max-width: 675px) {
+  .btncont {
+    grid-template-columns: repeat(1, 300px);
+    justify-content: center;
+    gap: 0;
+  }
+  .spreadList {
+    grid-template-columns: repeat(1, 0.1fr);
+    padding-left: 45px;
+    justify-content: center;
+  }
+}
+@media (max-width: 400px) {
+  .btncont {
+    padding-left: 0;
+    margin-left: 0;
+    justify-content: left;
+  }
+  .spreadList {
+    padding-left: 0;
+    justify-content: left;
+  }
 }

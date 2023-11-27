@@ -30,7 +30,7 @@ export const PortfolioCard: FC<IPortfolioProps> = ({ examples }) => {
     scroll.scrollToTop({ smooth: false, delay: 0, duration: 0 });
   }, []);
   return (
-    <div className="container">
+    <div className="cardscontainer">
       <div className="btncont">
         {examples.map((el) => (
           <div key={el.path} className="portbtn">
