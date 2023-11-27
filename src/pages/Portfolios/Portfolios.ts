@@ -23,9 +23,30 @@ export const Portfolios: PortfolioType[] = [
     name: "Готовые сайты",
     examples: [
       {
-        path: "",
-        height: 0,
-        infoImgs: [],
+        path: "/src/assets/BuildedSites/Finsgram",
+        height: 375,
+        infoImgs: [
+          { path: "1.jpg", height: 531.65 },
+          { path: "2.jpg", height: 554 },
+          { path: "3.jpg", height: 403 },
+          { path: "5.jpg", height: 375 },
+          { path: "4.jpg", height: 677 },
+          { path: "8.jpg", height: 551.51 },
+          { path: "6.jpg", height: 533.3 },
+          { path: "7.jpg", height: 450.87 },
+          { path: "9.jpg", height: 300 },
+        ],
+      },
+      {
+        path: "/src/assets/BuildedSites/Sedona",
+        height: 375,
+        infoImgs: [
+          { path: "1.jpg", height: 508 },
+          { path: "2.jpg", height: 331.52 },
+          { path: "3.jpg", height: 363.5 },
+          { path: "4.jpg", height: 401 },
+          { path: "5.jpg", height: 533.43 },
+        ],
       },
     ],
   },
@@ -33,9 +54,14 @@ export const Portfolios: PortfolioType[] = [
     name: "Интернет-магазин",
     examples: [
       {
-        path: "",
-        height: 0,
-        infoImgs: [],
+        path: "/src/assets/IShops",
+        height: 248.3,
+        infoImgs: [
+          { path: "2.jpg", height: 157.7 },
+          { path: "1.jpg", height: 138.3 },
+          { path: "3.jpg", height: 157.16 },
+          { path: "4.jpg", height: 198.22 },
+        ],
       },
     ],
   },
@@ -86,15 +112,17 @@ export const Portfolios: PortfolioType[] = [
     examples: [
       {
         path: "/src/assets/MobileDev/WeatherApp",
-        height: 694.72,
-        infoImgs: [],
+        height: 274,
+        infoImgs: [{ path: "1.jpg", height: 400.56 }],
       },
       {
         path: "/src/assets/MobileDev/PizzaApp",
-        height: 300,
+        height: 264,
         infoImgs: [
-          { path: "1.jpg", height: 533.3 },
+          { path: "1.jpg", height: 490.83 },
           { path: "2.jpg", height: 374.86 },
+          { path: "3.jpg", height: 400 },
+          { path: "4.jpg", height: 462.5 },
         ],
       },
     ],
