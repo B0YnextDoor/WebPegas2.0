@@ -51,7 +51,7 @@ export const Portfolios: PortfolioType[] = [
     ],
   },
   {
-    name: "Интернет-магазин",
+    name: "Интернет-магазины",
     examples: [
       {
         path: "/src/assets/IShops",
@@ -66,7 +66,7 @@ export const Portfolios: PortfolioType[] = [
     ],
   },
   {
-    name: "Landing Page",
+    name: "Landing Pages",
     examples: [
       {
         path: "/src/assets/Landings/Fecit",

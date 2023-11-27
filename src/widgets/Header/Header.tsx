@@ -19,16 +19,16 @@ export const Header = () => {
         scroll.scrollTo(1300);
         break;
       }
-      case "Связаться с нами": {
-        navigate("/");
-        scroll.scrollTo(1970);
-        break;
-      }
-      case "Контакты": {
-        navigate("/");
-        scroll.scrollTo(2300);
-        break;
-      }
+      // case "Связаться с нами": {
+      //   navigate("/");
+      //   scroll.scrollTo(1970);
+      //   break;
+      // }
+      // case "Контакты": {
+      //   navigate("/");
+      //   scroll.scrollTo(2300);
+      //   break;
+      // }
       default: {
         navigate("/");
         break;
@@ -39,10 +39,10 @@ export const Header = () => {
     <div className={styles.header}>
       <img
         className={styles.logo}
-        src="/logo.svg"
+        src="/logo.jpg"
         alt=""
-        width={162}
-        height={61}
+        width={251}
+        height={59}
       />
       <ul className={styles.navbar}>
         {HeaderNav.map((el) => (

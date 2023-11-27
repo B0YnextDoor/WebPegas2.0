@@ -67,7 +67,7 @@
 @media (max-width: 642px) {
   .container {
     margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
   .astrocont {
     margin-left: 290px;
@@ -78,7 +78,7 @@
   .container {
     margin-top: 10px;
     padding-top: 30px;
-    margin-bottom: 400px;
+    margin-bottom: 10px;
   }
   .container > img {
     align-self: center;

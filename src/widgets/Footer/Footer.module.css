@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  gap: 30%;
+  gap: 20%;
   color: #a4a4a4;
   border-top: 2px solid #de00bb;
   margin-top: 50px;
@@ -9,60 +9,87 @@
   letter-spacing: 0em;
   font-size: 11px;
 }
+.socnets > div {
+  display: flex;
+  margin: 20px 0px;
+}
+
+.socnets > div > a {
+  font-size: 14px;
+  text-decoration: none;
+  padding: 0px 10px;
+  margin: 0px 0px;
+  color: #00a4ff;
+}
 
 .first {
   margin-left: 165px;
+  margin-top: 20px;
+  min-width: 200px;
   max-width: 500px;
 }
 
-.first > p {
+.second {
+  display: flex;
+  margin-top: 20px;
   font-size: 16px;
   color: aqua;
-}
-
-.second {
-  max-width: 300px;
   margin-right: 50px;
 }
 
 @media (max-width: 1200px) {
   .container {
-    gap: 27%;
+    gap: 17%;
   }
   .first {
     margin-left: 100px;
   }
-  .first > p {
+  .second {
     font-size: 14px;
   }
 }
 @media (max-width: 1000px) {
   .container {
-    gap: 20%;
+    gap: 10%;
   }
   .first {
     margin-left: 100px;
     white-space: nowrap;
   }
+  .second {
+    margin-right: 0;
+  }
+  .socnets > div > a {
+    font-size: 12px;
+  }
 }
 @media (max-width: 768px) {
   .container {
-    gap: 2%;
+    gap: 5%;
     font-size: 9px;
   }
   .first {
     margin-left: 20px;
   }
-  .first > p {
+  .second {
+    margin-right: 0;
     font-size: 12px;
   }
+  .socnets > div {
+    margin: 5px 0px;
+  }
 }
-@media (max-width: 480px) {
+@media (max-width: 650px) {
   .container {
+    margin-top: 10px;
     gap: 0;
     flex-direction: column-reverse;
   }
   .first {
+    margin-top: 5px;
     margin-left: 0;
+  }
+  .second {
+    margin-top: 10px;
   }
 }

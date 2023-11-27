@@ -44,3 +44,18 @@
   font-size: 22px;
   box-shadow: 4px 4px 4px rgba(126, 17, 181, 0.7);
 }
+
+@media (max-width: 1200px) {
+  .buttoncontainer {
+    width: 287.1px;
+    height: 54.9px;
+  }
+  .buttoncontainer > button {
+    font-size: 18px;
+    width: 315px;
+    height: 45px;
+  }
+  .buttoncontainer > button:hover {
+    font-size: 20px;
+  }
+}

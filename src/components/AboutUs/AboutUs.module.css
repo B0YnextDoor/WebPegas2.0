@@ -9,11 +9,11 @@
   margin-bottom: 20px;
 }
 
-.pluslist {
+/* .pluslist {
   display: grid;
   grid-template-columns: 30% 70%;
   z-index: 1;
-}
+} */
 
 .astrocont {
   position: absolute;
@@ -24,7 +24,7 @@
 @media (max-width: 1200px) {
   .container {
     margin-left: 100px;
-    margin-top: -30px;
+    margin-top: -60px;
   }
   .container > img {
     width: 105px;
@@ -41,6 +41,7 @@
 @media (max-width: 1000px) {
   .container {
     margin-left: 10px;
+    margin-top: -80px;
   }
   .container > img {
     width: 94.5px;
@@ -53,8 +54,12 @@
 }
 @media (max-width: 810px) {
   .astrocont {
-    margin-top: 290px;
-    margin-left: 370px;
+    margin-top: 80px;
+    margin-left: 510px;
+  }
+  .astrocont > img {
+    width: 200px;
+    height: 200px;
   }
 }
 @media (max-width: 768px) {
@@ -66,12 +71,15 @@
     height: 33.453px;
   }
   .astrocont {
-    margin-top: 320px;
-    margin-left: 230px;
+    margin-left: 400px;
   }
-  .astrocont > img {
-    width: 240px;
-    height: 240px;
+}
+@media (max-width: 642px) {
+  .container {
+    margin-top: -10px;
+  }
+  .astrocont {
+    display: none;
   }
 }
 @media (max-width: 480px) {

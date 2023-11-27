@@ -1,5 +1,4 @@
 import { AboutText } from "../../widgets/AboutText/AboutText";
-import { PlusList } from "../../widgets/PlusList/PlusList";
 import styles from "./AboutUs.module.css";
 
 export const AboutUs = () => {
@@ -10,7 +9,6 @@ export const AboutUs = () => {
       <div className={styles.astrocont}>
         <img src="astronaut2.png" alt="" width={350} height={350} />
       </div>
-      <PlusList />
     </div>
   );
 };

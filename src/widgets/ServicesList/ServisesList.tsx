@@ -12,7 +12,6 @@ export const ServicesList = () => {
           <div>
             <p>{el.info}</p>
           </div>
-          <h4>{el.price}</h4>
         </div>
       ))}
     </div>

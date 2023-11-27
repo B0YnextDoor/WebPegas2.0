@@ -17,6 +17,23 @@
   opacity: 0.6;
 }
 
+/* .container > h1 {
+  font-size: 80px;
+  font-weight: 800;
+  text-align: center;
+  align-self: center;
+  background: -webkit-linear-gradient(
+    45deg,
+    #de00bb 2.82%,
+    #8a6cf8 44.93%,
+    #00d8e6 95.55%
+  );
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 1;
+} */
+
 .container > img {
   padding: 10px 0px;
   z-index: 1;
@@ -48,18 +65,6 @@
     margin: 25px 10px;
     font-size: 22px;
   }
-  .buttoncontainer {
-    width: 287.1px;
-    height: 54.9px;
-  }
-  .buttoncontainer > button {
-    font-size: 18px;
-    width: 315px;
-    height: 45px;
-  }
-  .buttoncontainer > button:hover {
-    font-size: 20px;
-  }
 }
 @media (max-width: 1000px) {
   .container {
@@ -76,18 +81,6 @@
   .container > h2 {
     margin: 40px 10px;
     font-size: 20px;
-  }
-  .buttoncontainer {
-    width: 229.68px;
-    height: 43.92px;
-  }
-  .buttoncontainer > button {
-    font-size: 16px;
-    width: 250px;
-    height: 35px;
-  }
-  .buttoncontainer > button:hover {
-    font-size: 18px;
   }
 }
 @media (max-width: 768px) {
@@ -106,18 +99,6 @@
     margin: 20px 10px;
     font-size: 18px;
   }
-  .buttoncontainer {
-    width: 183.744px;
-    height: 35.136px;
-  }
-  .buttoncontainer > button {
-    font-size: 14px;
-    width: 200px;
-    height: 30px;
-  }
-  .buttoncontainer > button:hover {
-    font-size: 16px;
-  }
 }
 @media (max-width: 480px) {
   .container {
@@ -135,18 +116,6 @@
     margin: 15px 10px;
     font-size: 16px;
   }
-  .buttoncontainer {
-    width: 183.744px;
-    height: 35.136px;
-  }
-  .buttoncontainer > button {
-    font-size: 14px;
-    width: 200px;
-    height: 30px;
-  }
-  .buttoncontainer > button:hover {
-    font-size: 16px;
-  }
 }
 @media (max-width: 376px) {
   .container > img {
@@ -161,16 +130,9 @@
     margin: 5px 10px;
     font-size: 14px;
   }
-  .buttoncontainer {
-    width: 128.62px;
-    height: 24.6px;
-  }
-  .buttoncontainer > button {
-    font-size: 12px;
-    width: 135px;
-    height: 20px;
-  }
-  .buttoncontainer > button:hover {
-    font-size: 14px;
+}
+@media (max-width: 361px) {
+  .container {
+    margin-top: 25px;
   }
 }

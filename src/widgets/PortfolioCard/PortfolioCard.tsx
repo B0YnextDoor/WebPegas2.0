@@ -1,9 +1,6 @@
 import { FC, useState, useEffect } from "react";
 import "./PortfolioCard.css";
-import {
-  IPortfolioProps,
-  PortfolioExmplType,
-} from "../../pages/Portfolios/Portfolios";
+import { IPortfolioProps, PortfolioExmplType } from "../../pages/Portfolios";
 import { animateScroll as scroll } from "react-scroll";
 
 export const PortfolioCard: FC<IPortfolioProps> = ({ examples }) => {
