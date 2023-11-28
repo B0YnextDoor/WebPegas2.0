@@ -60,13 +60,13 @@
 @media (max-width: 675px) {
   .btncont {
     grid-template-columns: repeat(1, 300px);
-    justify-content: center;
+    justify-items: center;
     gap: 0;
   }
   .spreadList {
     grid-template-columns: repeat(1, 0.1fr);
-    padding-left: 45px;
     justify-content: center;
+    margin: 10px 0;
   }
 }
 @media (max-width: 400px) {
