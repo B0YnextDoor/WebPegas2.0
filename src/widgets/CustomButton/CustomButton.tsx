@@ -18,11 +18,6 @@ export const CustomButton = ({ children }: any) => {
     <div className="buttoncontainer">
       <script data-b24-form="click/10/83b21a" data-skip-moving="true"></script>
       <button>{children}</button>
-      <br />
-      <div style={{ fontSize: "14px", lineHeight: "16px" }}>
-        * Если наши менеджеры не ответят вам в течении 10 минут.{" "}
-        <span className="orangeColor">Скидка 10%</span> на первый заказ.
-      </div>
     </div>
   );
 };

@@ -1,5 +1,5 @@
 .buttoncontainer {
-  width: 319px;
+  width: 320px;
   height: 61px;
   background: linear-gradient(
     90deg,
@@ -7,7 +7,7 @@
     #8a6cf8 44.93%,
     #00d8e6 95.55%
   );
-  border-radius: 10px;
+  border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,7 +19,7 @@
   font-weight: 600;
   text-align: center;
   cursor: pointer;
-  width: 350px;
+  width: 310px;
   height: 50px;
   background: #fff;
   border-radius: 20px;
@@ -52,7 +52,7 @@
   }
   .buttoncontainer > button {
     font-size: 18px;
-    width: 315px;
+    width: 277px;
     height: 45px;
   }
   .buttoncontainer > button:hover {

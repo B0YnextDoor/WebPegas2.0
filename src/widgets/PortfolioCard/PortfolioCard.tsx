@@ -7,6 +7,7 @@ export const PortfolioCard: FC<IPortfolioProps> = ({ examples }) => {
   const [shownel, setShownEl] = useState<PortfolioExmplType>({
     path: "",
     height: 0,
+    width: 0,
     infoImgs: [],
   });
   const handleClickShowList = (e: any) => {
@@ -20,6 +21,7 @@ export const PortfolioCard: FC<IPortfolioProps> = ({ examples }) => {
     setShownEl({
       path: "",
       height: 0,
+      width: 0,
       infoImgs: [],
     });
   };
@@ -36,7 +38,7 @@ export const PortfolioCard: FC<IPortfolioProps> = ({ examples }) => {
                 src={`${el.path}.jpg`}
                 id={el.path}
                 alt=""
-                width={300}
+                width={el.width}
                 height={el.height}
               />
             </button>
@@ -51,7 +53,7 @@ export const PortfolioCard: FC<IPortfolioProps> = ({ examples }) => {
             <img
               src={`${shownel.path}.jpg`}
               alt=""
-              width={300}
+              width={shownel.width}
               height={shownel.height}
             />
             {shownel.infoImgs.map((image) => (
@@ -59,7 +61,7 @@ export const PortfolioCard: FC<IPortfolioProps> = ({ examples }) => {
                 key={image.path}
                 src={`${shownel.path}${image.path}`}
                 alt=""
-                width={300}
+                width={image.width}
                 height={image.height}
               />
             ))}

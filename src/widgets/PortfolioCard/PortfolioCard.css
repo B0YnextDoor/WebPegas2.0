@@ -37,6 +37,7 @@
   grid-template-columns: repeat(3, 0.5fr);
   background-image: url("/portfoliobckground.jpg");
   background-position: center;
+  justify-items: center;
 }
 
 .spreadList > img {
@@ -47,13 +48,11 @@
   .btncont {
     display: grid;
     grid-template-columns: repeat(2, 300px);
+    justify-items: center;
     gap: 30px;
   }
 }
 @media (max-width: 1000px) {
-  .btncont {
-    justify-content: left;
-  }
   .spreadList {
     grid-template-columns: repeat(2, 0.5fr);
   }
