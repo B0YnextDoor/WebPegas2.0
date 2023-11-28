@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   border: none;
-  background-image: url("../../static/portfoliobckground.jpg");
+  background-image: url("/portfoliobckground.jpg");
   background-position: center;
 }
 
@@ -35,7 +35,7 @@
   border: none;
   display: grid;
   grid-template-columns: repeat(3, 0.5fr);
-  background-image: url("../../static/portfoliobckground.jpg");
+  background-image: url("/portfoliobckground.jpg");
   background-position: center;
 }
 
