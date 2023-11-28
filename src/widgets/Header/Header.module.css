@@ -4,17 +4,27 @@
   justify-content: center;
 }
 
-.header > img {
-  margin-top: 40px;
+.number {
+  margin-top: 35px;
+  font-size: 20px;
+  font-weight: 600;
   margin-right: 50px;
+  margin-left: 50px;
+  background: -webkit-linear-gradient(
+    45deg,
+    #de00bb 2.82%,
+    #8a6cf8 44.93%,
+    #00d8e6 95.55%
+  );
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .logo {
   margin-left: 0px;
-}
-
-.number {
-  margin-left: 50px;
+  margin-top: 40px;
+  margin-right: 50px;
 }
 
 .navbar {
@@ -51,13 +61,11 @@
   .logo {
     width: 175.7px;
     height: 41.3px;
+    margin-top: 30px;
   }
   .number {
-    width: 128px;
-    height: 17.6px;
+    font-size: 18px;
     margin-left: 40px;
-  }
-  .header > img {
     margin-top: 30px;
   }
   .navbar {
@@ -72,13 +80,11 @@
     width: 123px;
     height: 28.91px;
     margin-left: 50px;
+    margin-top: 20px;
   }
   .number {
-    width: 102.4px;
-    height: 14.08px;
-  }
-  .header > img {
     margin-top: 20px;
+    font-size: 16px;
   }
   .navbar {
     margin-top: 20px;
@@ -89,19 +95,16 @@
   }
 }
 @media (max-width: 768px) {
-  .header > img {
-    margin-right: 0px;
-  }
   .logo {
     display: none;
     margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 10px;
   }
   .number {
-    width: 81.92px;
-    height: 11.264px;
+    font-size: 14px;
     margin-left: 0px;
-  }
-  .header > img {
+    margin-right: 0px;
     margin-top: 10px;
   }
   .navbar {
@@ -117,16 +120,16 @@
     margin-top: 5px;
   }
   .number {
-    width: 102.4px;
-    height: 14.08px;
+    margin-top: 5px;
+    font-size: 16px;
   }
   .navbar > li > button {
     font-size: 16px;
     margin: 20px 20px;
   }
 }
-@media (max-width: 410px) {
-  .header > img {
+@media (max-width: 415px) {
+  .number {
     display: none;
   }
 }

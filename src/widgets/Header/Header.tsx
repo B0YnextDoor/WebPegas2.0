@@ -51,13 +51,7 @@ export const Header = () => {
           </li>
         ))}
       </ul>
-      <img
-        className={styles.number}
-        src="/headernumber.svg"
-        alt=""
-        width={160}
-        height={22}
-      />
+      <h3 className={styles.number}>+7 499 325 45 25</h3>
     </div>
   );
 };

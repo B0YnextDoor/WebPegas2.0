@@ -41,7 +41,7 @@ export const Footer = () => {
       </div>
       <div className={styles.second}>
         <LocalPhoneIcon />
-        +7 928 928 92 28
+        +7 499 325 45 25
       </div>
     </div>
   );

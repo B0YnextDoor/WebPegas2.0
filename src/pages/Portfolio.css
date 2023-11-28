@@ -1,5 +1,5 @@
 .container {
-  background-image: url("../static/portfoliobckground.jpg");
+  background-image: url("/portfoliobckground.jpg");
   background-position: center;
   height: 100vh;
   width: 100vw;
