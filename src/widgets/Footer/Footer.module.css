@@ -1,9 +1,9 @@
 .container {
+  background-color: rgba(19, 17, 25, 1);
   display: flex;
   gap: 20%;
   color: #a4a4a4;
   border-top: 2px solid #de00bb;
-  margin-top: 50px;
   font-weight: 200;
   line-height: 22px;
   letter-spacing: 0em;
@@ -81,7 +81,6 @@
 }
 @media (max-width: 650px) {
   .container {
-    margin-top: 10px;
     gap: 0;
     flex-direction: column-reverse;
   }

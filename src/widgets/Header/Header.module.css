@@ -125,7 +125,7 @@
     margin: 20px 20px;
   }
 }
-@media (max-width: 393px) {
+@media (max-width: 410px) {
   .header > img {
     display: none;
   }

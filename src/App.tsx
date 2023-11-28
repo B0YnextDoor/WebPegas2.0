@@ -11,8 +11,8 @@ function App() {
       <main>
         <Services />
         <AboutUs />
-        <Footer />
       </main>
+      <Footer />
     </>
   );
 }

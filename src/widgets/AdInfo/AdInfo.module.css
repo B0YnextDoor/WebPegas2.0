@@ -1,13 +1,13 @@
 .container {
   margin-top: 230px;
-  margin-left: 162px;
   display: flex;
   align-items: center;
+  margin-left: 0px;
 }
 
 .container > div {
   margin: 0px 20px;
-  width: 350px;
+  width: 35%;
   height: 62px;
   border-radius: 15px;
   background: #1b1824;
@@ -29,11 +29,9 @@
 
 @media (max-width: 1200px) {
   .container {
-    margin-left: 102px;
     margin-top: 220px;
   }
   .container > div {
-    width: 315px;
     height: 64px;
   }
   .container > div > p {
@@ -47,8 +45,6 @@
 }
 @media (max-width: 1000px) {
   .container {
-    margin-left: 0px;
-    justify-content: center;
     margin-top: 190px;
   }
   .container > div {
@@ -71,7 +67,6 @@
   }
   .container > div {
     margin-bottom: 25px;
-    width: 200px;
     height: 70px;
   }
   .container > div > p {

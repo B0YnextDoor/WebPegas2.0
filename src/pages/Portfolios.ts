@@ -23,7 +23,7 @@ export const Portfolios: PortfolioType[] = [
     name: "Готовые сайты",
     examples: [
       {
-        path: "/src/assets/BuildedSites/Finsgram",
+        path: "/src/static/BuildedSitesFinsgram",
         height: 375,
         infoImgs: [
           { path: "1.jpg", height: 531.65 },
@@ -38,7 +38,7 @@ export const Portfolios: PortfolioType[] = [
         ],
       },
       {
-        path: "/src/assets/BuildedSites/Sedona",
+        path: "/src/static/BuildedSitesSedona",
         height: 375,
         infoImgs: [
           { path: "1.jpg", height: 508 },
@@ -54,7 +54,7 @@ export const Portfolios: PortfolioType[] = [
     name: "Интернет-магазины",
     examples: [
       {
-        path: "/src/assets/IShops",
+        path: "/src/static/IShopsTechnoMart",
         height: 248.3,
         infoImgs: [
           { path: "2.jpg", height: 157.7 },
@@ -69,7 +69,7 @@ export const Portfolios: PortfolioType[] = [
     name: "Landing Pages",
     examples: [
       {
-        path: "/src/assets/Landings/Fecit",
+        path: "/src/static/LandingsFecit",
         height: 450,
         infoImgs: [
           { path: "1.jpg", height: 533 },
@@ -81,7 +81,7 @@ export const Portfolios: PortfolioType[] = [
         ],
       },
       {
-        path: "/src/assets/Landings/Activebox",
+        path: "/src/static/LandingsActivebox",
         height: 333,
         infoImgs: [
           { path: "1.jpg", height: 300 },
@@ -100,12 +100,12 @@ export const Portfolios: PortfolioType[] = [
     name: "Мобильная разработка",
     examples: [
       {
-        path: "/src/assets/MobileDev/WeatherApp",
+        path: "/src/static/MobileDevWeatherApp",
         height: 274,
         infoImgs: [{ path: "1.jpg", height: 400.56 }],
       },
       {
-        path: "/src/assets/MobileDev/PizzaApp",
+        path: "/src/static/MobileDevPizzaApp",
         height: 264,
         infoImgs: [
           { path: "1.jpg", height: 490.83 },
@@ -120,12 +120,12 @@ export const Portfolios: PortfolioType[] = [
     name: "Обучение нейросетей",
     examples: [
       {
-        path: "/src/assets/NeuralNets/Generic",
+        path: "/src/static/NeuralNetsGeneric",
         height: 588.61,
         infoImgs: [],
       },
       {
-        path: "/src/assets/NeuralNets/Semili",
+        path: "/src/static/NeuralNetsSemili",
         height: 582,
         infoImgs: [],
       },
@@ -135,7 +135,7 @@ export const Portfolios: PortfolioType[] = [
     name: "Создание автоворонок",
     examples: [
       {
-        path: "/src/assets/Funnels/Boldo",
+        path: "/src/static/FunnelsBoldo",
         height: 570,
         infoImgs: [
           { path: "1.jpg", height: 375 },

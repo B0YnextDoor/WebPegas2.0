@@ -33,7 +33,7 @@ export const PortfolioCard: FC<IPortfolioProps> = ({ examples }) => {
           <div key={el.path} className="portbtn">
             <button onClick={(e) => handleClickShowList(e)}>
               <img
-                src={`${el.path}/main.jpg`}
+                src={`${el.path}.jpg`}
                 id={el.path}
                 alt=""
                 width={300}
@@ -49,7 +49,7 @@ export const PortfolioCard: FC<IPortfolioProps> = ({ examples }) => {
         <button onClick={(e) => handleClickHideList(e)}>
           <div className="spreadList">
             <img
-              src={`${shownel.path}/main.jpg`}
+              src={`${shownel.path}.jpg`}
               alt=""
               width={300}
               height={shownel.height}
@@ -57,7 +57,7 @@ export const PortfolioCard: FC<IPortfolioProps> = ({ examples }) => {
             {shownel.infoImgs.map((image) => (
               <img
                 key={image.path}
-                src={`${shownel.path}/info/${image.path}`}
+                src={`${shownel.path}${image.path}`}
                 alt=""
                 width={300}
                 height={image.height}

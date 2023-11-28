@@ -66,6 +66,10 @@ p {
   .serviceslist {
     grid-template-columns: repeat(3, 300px);
   }
+  .service {
+    min-height: 120px;
+    width: auto;
+  }
   .service > img {
     width: 28px;
     height: 28px;
@@ -95,9 +99,6 @@ p {
     font-size: 20px;
   }
   .service > h4 {
-    font-size: 14px;
-  }
-  .service > div > p {
     font-size: 14px;
   }
 }
@@ -144,8 +145,11 @@ p {
   p {
     margin-bottom: 1px;
   }
+  .service > a {
+    font-size: 16px;
+  }
   .service {
-    max-width: none;
+    max-width: 180px;
     min-height: 0;
     max-height: none;
   }
@@ -163,29 +167,18 @@ p {
 }
 @media (max-width: 400px) {
   .serviceslist {
-    grid-template-columns: repeat(2, 180px);
-  }
-  .service > a {
-    font-size: 16px;
-  }
-  .service > div > p {
-    font-size: 14px;
-    max-width: 150px;
-    min-height: 50px;
-  }
-}
-@media (max-width: 376px) {
-  .serviceslist {
     grid-template-columns: repeat(2, 150px);
     gap: 4%;
   }
+  .service {
+    max-width: 150px;
+    min-height: 50px;
+  }
   .service > a {
-    font-size: 16px;
+    font-size: 14px;
   }
   .service > div > p {
     font-size: 14px;
-    max-width: 150px;
-    min-height: 50px;
   }
 }
 @media (max-width: 361px) {
