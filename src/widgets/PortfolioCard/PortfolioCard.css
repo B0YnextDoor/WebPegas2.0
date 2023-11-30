@@ -73,10 +73,10 @@
   .btncont {
     padding-left: 0;
     margin-left: 0;
-    justify-content: left;
+    justify-content: center;
   }
   .spreadList {
     padding-left: 0;
-    justify-content: left;
+    justify-content: center;
   }
 }
