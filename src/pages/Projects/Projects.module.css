@@ -1,0 +1,183 @@
+.container {
+  background-image: url("/portfoliobckground.jpg");
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  --swiper-navigation-size: 30px;
+  --swiper-navigation-color: white;
+  --swiper-pagination-color: white;
+  --swiper-pagination-bullet-inactive-color: rgb(123, 0, 255);
+  --swiper-pagination-bullet-inactive-opacity: 0.7;
+}
+
+.text {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.text > h1 {
+  font-size: 50px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.slidecont {
+  display: flex;
+  justify-content: center;
+  height: 75vh;
+}
+
+.left,
+.right {
+  display: flex;
+  width: 50vw;
+}
+
+.left {
+  padding: 30px;
+  flex-direction: column;
+}
+
+.right {
+  padding: 30px;
+}
+
+.right > div > img {
+  border-radius: 20px;
+  padding: 9px;
+}
+
+.left > div {
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  padding: 9px;
+}
+
+.left > div > span {
+  font-size: 20px;
+  font-weight: bold;
+  color: blueviolet;
+  font-style: italic;
+  margin-right: 20px;
+}
+
+.left > button {
+  width: 50%;
+  font-size: 12px;
+  padding: 10px 45px;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #fff;
+  transition-duration: 0.5s;
+}
+
+.left > button:hover {
+  width: 55%;
+  font-size: 14px;
+  border-color: blueviolet;
+}
+
+@media (max-width: 1200px) {
+  .text > h1 {
+    font-size: 40px;
+  }
+  .left > div {
+    font-size: 16px;
+  }
+  .left > div > span {
+    font-size: 18px;
+  }
+  .right > div > img {
+    width: 360px;
+    height: 360px;
+  }
+}
+@media (max-width: 1025px) {
+  .text > h1 {
+    font-size: 30px;
+  }
+  .left > div {
+    font-size: 13px;
+    padding: 7px;
+  }
+  .left > div > span {
+    font-size: 15px;
+  }
+  .right > div > img {
+    padding: 7px;
+    width: 270px;
+    height: 270px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    --swiper-navigation-size: 20px;
+  }
+  .slidecont {
+    flex-direction: column;
+    justify-content: initial;
+    height: 90vh;
+  }
+  .text > h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .left {
+    width: 80vw;
+    padding: 20px;
+    padding-bottom: 0;
+  }
+  .left > div {
+    padding: 4px;
+  }
+  .right {
+    width: 80vw;
+    justify-content: center;
+    padding: 15px;
+    padding-top: 0;
+  }
+  .right > div > img {
+    padding: 7px;
+    width: 240px;
+    height: 240px;
+  }
+}
+@media (max-width: 480px) {
+  .slidecont {
+    margin-top: -10px;
+    height: 85vh;
+  }
+  .text > h1 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .left {
+    width: 90vw;
+    padding-left: 20px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-bottom: 0;
+  }
+  .right {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .slidecont {
+    margin-top: -10px;
+    height: 100vh;
+  }
+  .left > div {
+    font-size: 12px;
+  }
+  .left > div > span {
+    font-size: 14px;
+  }
+}

@@ -3,10 +3,26 @@
   flex-direction: column;
   position: relative;
   max-width: 1065px;
+  margin-bottom: 30px;
 }
 
-.container > img {
+/* .container > img {
   margin-bottom: 20px;
+} */
+
+.container > h1 {
+  font-size: 50px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  background: -webkit-linear-gradient(
+    90deg,
+    #de00bb 2.82%,
+    #8a6cf8 44.93%,
+    #00d8e6 95.55%
+  );
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* .pluslist {
@@ -24,7 +40,11 @@
 @media (max-width: 1200px) {
   .container {
     min-width: 910px;
-    margin-top: -60px;
+    margin-top: -80px;
+  }
+  .container > h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
   }
   .container > img {
     width: 105px;
@@ -40,6 +60,9 @@
     margin-top: 0px;
     min-width: 755px;
   }
+  .container > h1 {
+    font-size: 40px;
+  }
   .container > img {
     width: 94.5px;
     height: 37.17px;
@@ -51,6 +74,9 @@
 @media (max-width: 768px) {
   .container {
     min-width: 640px;
+  }
+  .container > h1 {
+    font-size: 35px;
   }
   .container > img {
     width: 85.05px;
@@ -72,6 +98,9 @@
 @media (max-width: 480px) {
   .container {
     margin-left: 0;
+  }
+  .container > h1 {
+    text-align: center;
   }
   .container > img {
     align-self: center;

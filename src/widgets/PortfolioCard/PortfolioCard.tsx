@@ -1,6 +1,9 @@
 import { FC, useState, useEffect } from "react";
 import "./PortfolioCard.css";
-import { IPortfolioProps, PortfolioExmplType } from "../../pages/Portfolios";
+import {
+  IPortfolioProps,
+  PortfolioExmplType,
+} from "../../pages/PortfolioOld/Portfolios";
 import { animateScroll as scroll } from "react-scroll";
 
 export const PortfolioCard: FC<IPortfolioProps> = ({ examples }) => {
@@ -31,7 +34,7 @@ export const PortfolioCard: FC<IPortfolioProps> = ({ examples }) => {
   return (
     <div className="cardscontainer">
       <div className="btncont">
-        {examples.map((el) => (
+        {examples.map((el: any) => (
           <div key={el.path} className="portbtn">
             <button onClick={(e) => handleClickShowList(e)}>
               <img

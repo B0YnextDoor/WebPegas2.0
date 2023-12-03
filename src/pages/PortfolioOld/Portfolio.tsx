@@ -1,9 +1,9 @@
-import { Header } from "../widgets/Header/Header";
 import "./Portfolio.css";
 import { useParams } from "react-router-dom";
 import { Portfolios } from "./Portfolios";
-import { ErrorPage } from "../widgets/ErrorPage/ErrorPage";
-import { PortfolioCard } from "../widgets/PortfolioCard/PortfolioCard";
+import { ErrorPage } from "../../widgets/ErrorPage/ErrorPage";
+import { PortfolioCard } from "../../widgets/PortfolioCard/PortfolioCard";
+import { Header } from "../../widgets/Header/Header";
 
 export const Portfolio = () => {
   const { id } = useParams();

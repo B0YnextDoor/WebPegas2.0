@@ -163,7 +163,7 @@ export const Portfolios: PortfolioType[] = [
     examples: [
       {
         path: "/FunnelsBoldo",
-        height: 570,
+        height: 450,
         width: 300,
         infoImgs: [
           { path: "1.jpg", width: 300, height: 375 },

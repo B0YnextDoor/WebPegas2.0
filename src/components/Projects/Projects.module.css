@@ -1,0 +1,92 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1065px;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.container > h1 {
+  font-size: 50px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  text-align: center;
+  background: -webkit-linear-gradient(
+    90deg,
+    #de00bb 2.82%,
+    #8a6cf8 44.93%,
+    #00d8e6 95.55%
+  );
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.buttoncontainer {
+  width: 320px;
+  height: 61px;
+  background: linear-gradient(
+    90deg,
+    #de00bb 2.82%,
+    #8a6cf8 44.93%,
+    #00d8e6 95.55%
+  );
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttoncontainer > button {
+  position: absolute;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  width: 310px;
+  height: 50px;
+  background: #fff;
+  border-radius: 20px;
+  border: none;
+  z-index: 1;
+  transition-duration: 0.5s;
+}
+
+.buttoncontainer > button > span {
+  background: -webkit-linear-gradient(
+    45deg,
+    #de00bb 2.82%,
+    #8a6cf8 44.93%,
+    #00d8e6 95.55%
+  );
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.buttoncontainer > button:hover {
+  font-size: 22px;
+  box-shadow: 4px 4px 4px rgba(126, 17, 181, 0.7);
+}
+
+@media (max-width: 1200px) {
+  .container > h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 1000px) {
+  .container > h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .container > h1 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 480px) {
+  .container > h1 {
+    text-align: center;
+  }
+}

@@ -19,16 +19,21 @@ export const Header = () => {
         scroll.scrollTo(1300);
         break;
       }
-      // case "Связаться с нами": {
-      //   navigate("/");
-      //   scroll.scrollTo(1970);
-      //   break;
-      // }
-      // case "Контакты": {
-      //   navigate("/");
-      //   scroll.scrollTo(2300);
-      //   break;
-      // }
+      case "Наши проекты": {
+        navigate("/");
+        scroll.scrollTo(1700);
+        break;
+      }
+      case "Отзывы": {
+        navigate("/");
+        scroll.scrollTo(2500);
+        break;
+      }
+      case "Вакансии": {
+        navigate("/");
+        scroll.scrollTo(3400);
+        break;
+      }
       default: {
         navigate("/");
         break;

@@ -7,9 +7,24 @@
   padding-top: 50px;
 }
 
-.container > img {
+.container > h1 {
+  font-size: 50px;
+  font-weight: 900;
   margin-bottom: 20px;
+  background: -webkit-linear-gradient(
+    90deg,
+    #de00bb 2.82%,
+    #8a6cf8 44.93%,
+    #00d8e6 95.55%
+  );
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
+/* .container > img {
+  margin-bottom: 20px;
+} */
 
 .astrocont {
   display: flex;
@@ -25,6 +40,9 @@
   .container > img {
     width: 132.3px;
     height: 41.3px;
+  }
+  .container > h1 {
+    font-size: 45px;
   }
   .astrocont {
     margin-left: 715px;
@@ -45,6 +63,9 @@
     width: 119.07px;
     height: 37.17px;
   }
+  .container > h1 {
+    font-size: 40px;
+  }
   .astrocont {
     margin-left: 570px;
     margin-top: -90px;
@@ -59,6 +80,9 @@
   .container > img {
     width: 107.163px;
     height: 33.453px;
+  }
+  .container > h1 {
+    font-size: 35px;
   }
   .astrocont {
     margin-left: 455px;
@@ -80,6 +104,9 @@
     margin-top: 10px;
     padding-top: 30px;
     margin-bottom: 10px;
+  }
+  .container > h1 {
+    text-align: center;
   }
   .container > img {
     align-self: center;

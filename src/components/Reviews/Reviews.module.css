@@ -1,0 +1,125 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.container > h1 {
+  font-size: 50px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  background: -webkit-linear-gradient(
+    90deg,
+    #de00bb 2.82%,
+    #8a6cf8 44.93%,
+    #00d8e6 95.55%
+  );
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.feedcont {
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  gap: 20px;
+  color: #111;
+  font-size: 24px;
+  justify-items: center;
+}
+
+.feedbox {
+  background-color: white;
+  width: 400px;
+  height: 400px;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 4px #8a6cf8;
+}
+
+.feedbox > div > span {
+  font-size: 36px;
+}
+
+.boxval {
+  padding: 20px;
+  color: #111;
+}
+
+@media (max-width: 1200px) {
+  .container > h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+  }
+  .feedcont {
+    grid-template-columns: repeat(2, 350px);
+  }
+  .feedbox {
+    width: 350px;
+  }
+  .feedbox > div > span {
+    font-size: 32px;
+  }
+  .boxval {
+    padding: 15px;
+  }
+}
+@media (max-width: 1000px) {
+  .container > h1 {
+    font-size: 40px;
+  }
+  .feedcont {
+    grid-template-columns: repeat(2, 300px);
+  }
+  .feedbox {
+    width: 300px;
+  }
+  .feedbox > div > span {
+    font-size: 28px;
+  }
+  .boxval {
+    padding: 10px;
+    font-size: 22px;
+  }
+}
+@media (max-width: 768px) {
+  .container > h1 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 680px) {
+  .feedcont {
+    grid-template-columns: repeat(2, 200px);
+  }
+  .feedbox {
+    width: 200px;
+    height: 300px;
+  }
+  .feedbox > div > span {
+    font-size: 20px;
+  }
+  .boxval {
+    padding: 5px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 440px) {
+  .feedcont {
+    grid-template-columns: repeat(2, 160px);
+  }
+  .feedbox {
+    width: 160px;
+    height: 300px;
+  }
+  .feedbox > div > span {
+    font-size: 18px;
+  }
+  .boxval {
+    padding: 5px 0 0 5px;
+    font-size: 14px;
+  }
+}

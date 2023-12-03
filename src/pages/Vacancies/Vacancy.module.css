@@ -1,0 +1,77 @@
+.container {
+  background-image: url("/portfoliobckground.jpg");
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.vacancy {
+  background-image: url("/portfoliobckground.jpg");
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 30px 5px 30px;
+  font-family: "Istok Web", sans-serif;
+}
+
+.vacancy > h1 {
+  font-size: 50px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.vacancy > div {
+  background-image: url("/portfoliobckground.jpg");
+  background-position: center;
+  margin-bottom: 15px;
+}
+
+.vacancy > div > h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.vacancy > div > ul {
+  font-size: 25px;
+  margin-left: 10%;
+}
+
+.vacancy > div > ul > li {
+  padding: 7px;
+  font-style: italic;
+}
+
+@media (max-width: 1000px) {
+  .vacancy > h1 {
+    font-size: 40px;
+  }
+  .vacancy > div > h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  .vacancy > div > ul {
+    font-size: 20px;
+  }
+  .vacancy > div {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 680px) {
+  .vacancy > h1 {
+    font-size: 30px;
+  }
+  .vacancy > div > h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .vacancy > div {
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 480px) {
+  .vacancy > div > ul {
+    font-size: 15px;
+  }
+}
