@@ -120,6 +120,12 @@
   }
   .navbar > li > button {
     font-size: 12px;
-    margin: 20px 1px;
+    margin: 20px 0px;
+  }
+}
+
+@media (max-width: 360px) {
+  .navbar > li > button {
+    padding-right: 7px;
   }
 }

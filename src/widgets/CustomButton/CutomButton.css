@@ -59,3 +59,17 @@
     font-size: 20px;
   }
 }
+@media (max-width: 480px) {
+  .buttoncontainer {
+    width: 224px;
+    height: 42.7px;
+  }
+  .buttoncontainer > button {
+    font-size: 16px;
+    width: 218px;
+    height: 36.7px;
+  }
+  .buttoncontainer > button:hover {
+    font-size: 18px;
+  }
+}

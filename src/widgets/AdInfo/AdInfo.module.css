@@ -90,7 +90,7 @@
   }
 }
 
-@media (max-width: 361px) {
+@media (max-width: 375px) {
   .container > div {
     height: 50px;
   }

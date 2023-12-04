@@ -107,7 +107,7 @@
     font-size: 16px;
   }
 }
-@media (max-width: 440px) {
+/* @media (max-width: 440px) {
   .feedcont {
     grid-template-columns: repeat(2, 160px);
   }
@@ -121,5 +121,21 @@
   .boxval {
     padding: 5px 0 0 5px;
     font-size: 14px;
+  }
+} */
+@media (max-width: 440px) {
+  .feedcont {
+    grid-template-columns: repeat(1, 300px);
+  }
+  .feedbox {
+    width: 300px;
+    height: 300px;
+  }
+  .feedbox > div > span {
+    font-size: 26px;
+  }
+  .boxval {
+    padding: 5px 0 0 5px;
+    font-size: 20px;
   }
 }
