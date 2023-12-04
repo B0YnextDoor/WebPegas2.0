@@ -73,3 +73,17 @@
     font-size: 18px;
   }
 }
+@media (max-width: 360px) {
+  .buttoncontainer {
+    width: 200px;
+    height: 32.25px;
+  }
+  .buttoncontainer > button {
+    font-size: 14px;
+    width: 194px;
+    height: 29.25px;
+  }
+  .buttoncontainer > button:hover {
+    font-size: 16px;
+  }
+}

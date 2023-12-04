@@ -9,7 +9,7 @@
 .container > h1 {
   font-size: 50px;
   font-weight: 900;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   background: -webkit-linear-gradient(
     90deg,
     #de00bb 2.82%,
@@ -22,27 +22,28 @@
   text-align: center;
 }
 
-.feedcont {
-  display: grid;
-  grid-template-columns: repeat(2, 400px);
-  gap: 20px;
-  color: #111;
-  font-size: 24px;
-  justify-items: center;
+.slidercont {
+  position: relative;
+  width: 400px;
 }
 
-.feedbox {
+.swiper {
+  width: 500px;
+}
+
+.card {
   background-color: white;
+  border-radius: 20px;
+  border: 2px solid rgb(131, 94, 165);
+  box-shadow: 2px 2px 4px #8a6cf8;
   width: 400px;
   height: 400px;
-  border-radius: 18px;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 2px 2px 4px #8a6cf8;
+  color: #111;
+  font-size: 22px;
 }
 
-.feedbox > div > span {
-  font-size: 36px;
+.card > div > span {
+  font-size: 32px;
 }
 
 .boxval {
@@ -55,14 +56,11 @@
     font-size: 45px;
     margin-bottom: 10px;
   }
-  .feedcont {
-    grid-template-columns: repeat(2, 350px);
+  .card {
+    width: 300px;
   }
-  .feedbox {
-    width: 350px;
-  }
-  .feedbox > div > span {
-    font-size: 32px;
+  .card > div > span {
+    font-size: 28px;
   }
   .boxval {
     padding: 15px;
@@ -72,70 +70,67 @@
   .container > h1 {
     font-size: 40px;
   }
-  .feedcont {
-    grid-template-columns: repeat(2, 300px);
+  .swiper {
+    width: 400px;
   }
-  .feedbox {
-    width: 300px;
+  .card {
+    width: 250px;
   }
-  .feedbox > div > span {
-    font-size: 28px;
+  .card > div > span {
+    font-size: 26px;
   }
   .boxval {
     padding: 10px;
-    font-size: 22px;
+    font-size: 18px;
+  }
+  .slidercont {
+    margin-left: 25%;
   }
 }
 @media (max-width: 768px) {
   .container > h1 {
     font-size: 35px;
   }
+  .swiper {
+    width: 300px;
+  }
+  .slidercont {
+    margin-left: 10%;
+  }
 }
-@media (max-width: 680px) {
-  .feedcont {
-    grid-template-columns: repeat(2, 200px);
+@media (max-width: 480px) {
+  .card {
+    width: 300px;
+    height: 310px;
   }
-  .feedbox {
-    width: 200px;
-    height: 300px;
+  .card > div > span {
+    font-size: 24px;
   }
-  .feedbox > div > span {
+  .boxval {
+    padding: 5px;
+    font-size: 18px;
+  }
+  .slidercont {
+    --swiper-navigation-size: 20px;
+    --swiper-navigation-sides-offset: 5px;
+    --swiper-navigation-color: #8a6cf8;
+    width: 310px;
+    margin-left: 0;
+  }
+}
+@media (max-width: 320px) {
+  .card {
+    width: 230px;
+    height: 240px;
+  }
+  .slidercont {
+    width: 240px;
+  }
+  .card > div > span {
     font-size: 20px;
   }
   .boxval {
     padding: 5px;
     font-size: 16px;
-  }
-}
-/* @media (max-width: 440px) {
-  .feedcont {
-    grid-template-columns: repeat(2, 160px);
-  }
-  .feedbox {
-    width: 160px;
-    height: 300px;
-  }
-  .feedbox > div > span {
-    font-size: 18px;
-  }
-  .boxval {
-    padding: 5px 0 0 5px;
-    font-size: 14px;
-  }
-} */
-@media (max-width: 440px) {
-  .feedcont {
-    grid-template-columns: repeat(1, 300px);
-  }
-  .feedbox {
-    width: 300px;
-    height: 300px;
-  }
-  .feedbox > div > span {
-    font-size: 26px;
-  }
-  .boxval {
-    padding: 5px 0 0 5px;
-    font-size: 20px;
   }
 }

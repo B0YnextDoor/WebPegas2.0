@@ -181,16 +181,20 @@ p {
     font-size: 14px;
   }
 }
-@media (max-width: 361px) {
+@media (max-width: 350px) {
   .serviceslist {
-    grid-template-columns: repeat(2, 140px);
+    grid-template-columns: repeat(1, 250px);
     gap: 3%;
   }
+  .service {
+    max-width: 300px;
+    min-height: 50px;
+  }
   .service > a {
-    font-size: 14px;
+    font-size: 16px;
   }
   .service > div > p {
-    max-width: 140px;
-    font-size: 12px;
+    max-width: 300px;
+    font-size: 14px;
   }
 }

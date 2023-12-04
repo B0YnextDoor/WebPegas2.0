@@ -3,9 +3,14 @@ import styles from "./Vacancy.module.css";
 import { Header } from "../../widgets/Header/Header";
 import { Affrods, VacList, TG, TGLst } from "../../widgets/Vacancies/VacList";
 import { ErrorPage } from "../../widgets/ErrorPage/ErrorPage";
+import { animateScroll as scroll } from "react-scroll";
+import { useEffect } from "react";
 
 export const Vacancy = () => {
   const { id } = useParams();
+  useEffect(() => {
+    scroll.scrollToTop({ smooth: false, delay: 0, duration: 0 });
+  }, [id]);
   if (!id) {
     return (
       <ErrorPage props={"500 Internal Server Error. Can't load portfolio."} />

@@ -32,7 +32,13 @@
 }
 @media (max-width: 480px) {
   .about {
-    font-size: 14px;
+    font-size: 16px;
     max-width: 100%;
+  }
+}
+@media (max-width: 360px) {
+  .about {
+    font-size: 12px;
+    margin-left: 5%;
   }
 }

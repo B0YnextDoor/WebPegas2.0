@@ -135,6 +135,7 @@
     height: 33.2px;
   }
   .container > h1 {
+    padding-top: 4px;
     font-size: 35px;
   }
   .agency {
@@ -149,5 +150,16 @@
 @media (max-width: 360px) {
   .container {
     margin-top: 15px;
+  }
+  .container > h1 {
+    padding-top: 4px;
+    font-size: 28px;
+  }
+  .agency {
+    width: 240px;
+    height: 42px;
+  }
+  .container > h2 {
+    font-size: 12px;
   }
 }

@@ -90,12 +90,16 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 380px) {
   .container > div {
     height: 50px;
   }
   .container > div > p {
     font-size: 14px;
     margin: 10px 10px;
+  }
+  .container > div > img {
+    width: 5;
+    height: 5;
   }
 }

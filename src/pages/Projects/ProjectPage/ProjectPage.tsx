@@ -3,6 +3,8 @@ import { ErrorPage } from "../../../widgets/ErrorPage/ErrorPage";
 import styles from "./ProjectPage.module.css";
 import { Header } from "../../../widgets/Header/Header";
 
+// import "swiper/css/effect-cards";
+
 export const ProjectPage = () => {
   const { id } = useParams();
   if (!id) {
@@ -11,7 +13,6 @@ export const ProjectPage = () => {
   return (
     <div className={styles.container}>
       <Header />
-      Project {id}
     </div>
   );
 };
