@@ -95,3 +95,17 @@
     margin: 10px 10px;
   }
 }
+
+@media (max-width: 280px) {
+  .container > div {
+    width: 190px;
+  }
+  .container > div > p {
+    font-size: 12px;
+    margin: 10px 10px;
+  }
+  .container > div > img {
+    width: 20px;
+    height: 20px;
+  }
+}

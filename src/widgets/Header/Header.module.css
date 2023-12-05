@@ -117,7 +117,7 @@
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 375px) {
   .navbar > li > button {
     padding-right: 7px;
   }
@@ -129,5 +129,10 @@
   }
   .navbar > li {
     max-height: 25px;
+  }
+}
+@media (max-width: 280px) {
+  .navbar > li > button {
+    font-size: 10px;
   }
 }
