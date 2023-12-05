@@ -121,7 +121,7 @@
   }
   .navbar {
     display: grid;
-    grid-template-columns: repeat(3, 80px);
+    grid-template-columns: repeat(3, 90px);
     margin-bottom: 15px;
   }
   .navbar > li {
