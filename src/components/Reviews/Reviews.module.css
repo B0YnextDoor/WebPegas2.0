@@ -125,12 +125,13 @@
   }
   .slidercont {
     width: 240px;
+    --swiper-navigation-size: 15px;
   }
   .card > div > span {
     font-size: 20px;
   }
   .boxval {
     padding: 5px;
-    font-size: 16px;
+    font-size: 14px;
   }
 }
