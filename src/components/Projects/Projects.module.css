@@ -22,7 +22,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-.buttoncontainer {
+.buttoncont {
   width: 320px;
   height: 61px;
   background: linear-gradient(
@@ -37,7 +37,7 @@
   justify-content: center;
 }
 
-.buttoncontainer > button {
+.buttoncont > button {
   position: absolute;
   font-size: 20px;
   font-weight: 600;
@@ -52,7 +52,7 @@
   transition-duration: 0.5s;
 }
 
-.buttoncontainer > button > span {
+.buttoncont > button > span {
   background: -webkit-linear-gradient(
     45deg,
     #de00bb 2.82%,
@@ -64,7 +64,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-.buttoncontainer > button:hover {
+.buttoncont > button:hover {
   font-size: 22px;
   box-shadow: 4px 4px 4px rgba(126, 17, 181, 0.7);
 }
@@ -73,6 +73,18 @@
   .container > h1 {
     font-size: 45px;
     margin-bottom: 10px;
+  }
+  .buttoncont {
+    width: 287.1px;
+    height: 54.9px;
+  }
+  .buttoncont > button {
+    font-size: 18px;
+    width: 277px;
+    height: 45px;
+  }
+  .buttoncont > button:hover {
+    font-size: 20px;
   }
 }
 @media (max-width: 1000px) {
@@ -85,8 +97,20 @@
     font-size: 35px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 360px) {
   .container > h1 {
     text-align: center;
+  }
+  .buttoncont {
+    width: 224px;
+    height: 42.7px;
+  }
+  .buttoncont > button {
+    font-size: 16px;
+    width: 218px;
+    height: 36.7px;
+  }
+  .buttoncont > button:hover {
+    font-size: 18px;
   }
 }

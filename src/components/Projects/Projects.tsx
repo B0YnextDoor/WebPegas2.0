@@ -8,10 +8,10 @@ export const Projects = () => {
     <div className={styles.container}>
       <h1>Наши проекты</h1>
       <ProjectsList />
-      <div className="buttoncontainer">
+      <div className={styles.buttoncont}>
         <button
           onClick={() => {
-            navigate("/projects");
+            navigate("/projects/0");
           }}
         >
           <span>Все проекты</span>

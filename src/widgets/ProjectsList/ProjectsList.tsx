@@ -1,10 +1,11 @@
+import { useNavigate } from "react-router-dom";
 import styles from "./ProjectsList.module.css";
 
 export const ProjectsList = () => {
-  // const navigate = useNavigate();
-  // const handleClick = (e: any) => {
-  //   navigate(`/projects/${e.target.id}`);
-  // };
+  const navigate = useNavigate();
+  const handleClick = (e: any) => {
+    navigate(`/projects/${e.target.id}`);
+  };
   return (
     <div className={styles.container}>
       <div>
@@ -20,9 +21,9 @@ export const ProjectsList = () => {
               backgroundSize: "cover",
             }}
           />
-          {/* <button id="1" onClick={(e) => handleClick(e)}>
+          <button id="13" onClick={(e) => handleClick(e)}>
             К проекту
-          </button> */}
+          </button>
         </div>
       </div>
       <div>
@@ -38,9 +39,9 @@ export const ProjectsList = () => {
               backgroundSize: "cover",
             }}
           />
-          {/* <button id="2" onClick={(e) => handleClick(e)}>
+          <button id="1" onClick={(e) => handleClick(e)}>
             К проекту
-          </button> */}
+          </button>
         </div>
       </div>
       <div>
@@ -56,13 +57,13 @@ export const ProjectsList = () => {
               backgroundSize: "cover",
             }}
           />
-          {/* <button
-            id="3"
+          <button
+            id="21"
             style={{ color: "rgb(9, 39, 65)", borderColor: "blueviolet" }}
             onClick={(e) => handleClick(e)}
           >
             К проекту
-          </button> */}
+          </button>
         </div>
       </div>
     </div>

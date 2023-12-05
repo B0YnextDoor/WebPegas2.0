@@ -1,33 +1,40 @@
 .about {
   text-align: left;
   padding: 10px;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 400;
   z-index: 1;
 }
 
+.about > p {
+  padding-right: 30%;
+}
+
 @media (max-width: 1200px) {
   .about {
-    font-size: 20px;
-    max-width: 660px;
+    font-size: 22px;
+    max-width: 760px;
   }
 }
 @media (max-width: 1000px) {
   .about {
-    font-size: 18px;
-    max-width: 550px;
+    font-size: 20px;
+    max-width: 650px;
   }
 }
 
 @media (max-width: 768px) {
   .about {
-    font-size: 16px;
+    font-size: 18px;
     max-width: 440px;
   }
 }
 @media (max-width: 768px) {
   .about {
     max-width: 390px;
+  }
+  .about > p {
+    padding-right: 0;
   }
 }
 @media (max-width: 480px) {
@@ -38,7 +45,7 @@
 }
 @media (max-width: 360px) {
   .about {
-    font-size: 12px;
+    font-size: 14px;
     margin-left: 5%;
   }
 }

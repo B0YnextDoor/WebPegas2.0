@@ -10,9 +10,10 @@ import {
 } from "swiper/modules";
 import { Header } from "../../widgets/Header/Header";
 import { slides } from "./ProjectList";
+import { useParams } from "react-router-dom";
 
 export const Projects = () => {
-  // const navigation = useNavigate();
+  const { id } = useParams();
   return (
     <div className={styles.container}>
       <Header />
@@ -26,6 +27,9 @@ export const Projects = () => {
         }}
       >
         <Swiper
+          onSwiper={(swiper) => {
+            swiper.slideTo(Number(id) + 1);
+          }}
           modules={[Navigation, Virtual, Pagination, Keyboard, Autoplay]}
           spaceBetween={30}
           slidesPerView={1}

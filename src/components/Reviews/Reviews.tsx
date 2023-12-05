@@ -5,7 +5,7 @@ import { EffectCards, EffectFade, Navigation } from "swiper/modules";
 import { useMediaQuery } from "@mui/material";
 
 export const Reviews = () => {
-  const matches = useMediaQuery("(max-width: 480px)");
+  const matches = useMediaQuery("(max-width: 530px)");
   return (
     <div className={styles.container}>
       <h1>Отзывы</h1>

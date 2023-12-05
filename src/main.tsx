@@ -19,7 +19,7 @@ const router = createBrowserRouter(
     <Route>
       <Route path="/" element={<App />} />
       <Route path="/portfolio/:id" element={<Portfolio />} />
-      <Route path="/projects" element={<Projects />} />
+      <Route path="/projects/:id" element={<Projects />} />
       {/* <Route path="/projects/:id" element={<ProjectPage />} /> */}
       <Route path="/vacancy/:id" element={<Vacancy />} />
       <Route path="*" element={<ErrorPage props={null} />} />
