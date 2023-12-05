@@ -44,7 +44,7 @@ export const Header = () => {
     <div className={styles.header}>
       <img
         className={styles.logo}
-        src="/logo.jpg"
+        src="/logo.svg"
         alt=""
         width={251}
         height={59}
