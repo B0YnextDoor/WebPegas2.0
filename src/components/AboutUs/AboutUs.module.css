@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   max-width: 1065px;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 /* .container > img {
@@ -10,19 +10,12 @@
 } */
 
 .container > h1 {
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 900;
-  margin-bottom: 10px;
-  background: -webkit-linear-gradient(
-    90deg,
-    #de00bb 2.82%,
-    #8a6cf8 44.93%,
-    #00d8e6 95.55%
-  );
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: center;
+  margin-bottom: 50px;
+  color: rgba(208, 100, 255, 1);
+  text-align: left;
+  font-family: "Lexend Deca", sans-serif;
 }
 
 /* .pluslist {
@@ -33,18 +26,16 @@
 
 .astrocont {
   position: absolute;
-  margin-top: -10px;
+  margin-top: 20px;
   margin-left: 630px;
 }
 
 @media (max-width: 1200px) {
   .container {
     min-width: 910px;
-    margin-top: -80px;
   }
   .container > h1 {
-    font-size: 45px;
-    margin-bottom: 10px;
+    font-size: 55px;
   }
   .container > img {
     width: 105px;
@@ -59,9 +50,10 @@
   .container {
     margin-top: 0px;
     min-width: 755px;
+    margin-bottom: 50px;
   }
   .container > h1 {
-    font-size: 40px;
+    font-size: 50px;
   }
   .container > img {
     width: 94.5px;
@@ -76,7 +68,7 @@
     min-width: 640px;
   }
   .container > h1 {
-    font-size: 35px;
+    font-size: 45px;
   }
   .container > img {
     width: 85.05px;
@@ -93,8 +85,8 @@
 }
 @media (max-width: 642px) {
   .container {
-    margin-top: -30px;
     min-width: 340px;
+    margin-bottom: 20px;
   }
   .astrocont {
     display: none;
@@ -103,6 +95,7 @@
 @media (max-width: 480px) {
   .container {
     margin-left: 0;
+    margin-bottom: 50px;
   }
   .container > h1 {
     text-align: center;
@@ -118,5 +111,11 @@
 @media (max-width: 360px) {
   .container {
     min-width: auto;
+  }
+}
+
+@media (max-width: 300px) {
+  .container > h1 {
+    font-size: 40px;
   }
 }

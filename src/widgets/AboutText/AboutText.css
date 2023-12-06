@@ -1,6 +1,5 @@
 .about {
   text-align: left;
-  padding: 10px;
   font-size: 24px;
   font-weight: 400;
   z-index: 1;
@@ -39,13 +38,12 @@
 }
 @media (max-width: 480px) {
   .about {
-    font-size: 16px;
     max-width: 100%;
+    padding-left: 10px;
   }
 }
 @media (max-width: 360px) {
   .about {
-    font-size: 14px;
     margin-left: 5%;
   }
 }

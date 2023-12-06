@@ -92,3 +92,8 @@
     margin-top: 10px;
   }
 }
+@media (max-width: 300px) {
+  .container {
+    font-size: 7px;
+  }
+}

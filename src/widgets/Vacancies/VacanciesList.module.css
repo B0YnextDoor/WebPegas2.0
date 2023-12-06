@@ -18,7 +18,8 @@
   margin-top: 10px;
   cursor: pointer;
   background-color: rgb(161, 119, 201);
-  border: 3px solid rgb(0, 255, 255);
+  /* border: 3px solid rgb(0, 255, 255); */
+  border: none;
   transition-duration: 0.5s;
   color: #fff;
   text-align: center;

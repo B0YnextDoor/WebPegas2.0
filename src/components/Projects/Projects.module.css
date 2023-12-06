@@ -1,35 +1,33 @@
 .container {
   display: flex;
   flex-direction: column;
-  max-width: 1065px;
-  margin-bottom: 40px;
-  align-items: center;
+  min-width: 1065px;
+  margin-bottom: 80px;
 }
 
 .container > h1 {
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 900;
-  margin-bottom: 20px;
-  text-align: center;
-  background: -webkit-linear-gradient(
-    90deg,
-    #de00bb 2.82%,
-    #8a6cf8 44.93%,
-    #00d8e6 95.55%
-  );
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  margin-bottom: 50px;
+  color: rgba(208, 100, 255, 1);
+  text-align: left;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
 }
 
 .buttoncont {
-  width: 320px;
-  height: 61px;
+  width: 360px;
+  height: 74px;
   background: linear-gradient(
     90deg,
-    #de00bb 2.82%,
-    #8a6cf8 44.93%,
-    #00d8e6 95.55%
+    rgba(56, 86, 239, 1),
+    rgba(193, 75, 234, 0.82)
   );
   border-radius: 20px;
   display: flex;
@@ -39,13 +37,13 @@
 
 .buttoncont > button {
   position: absolute;
-  font-size: 20px;
+  font-size: 32px;
   font-weight: 600;
   text-align: center;
   cursor: pointer;
-  width: 310px;
-  height: 50px;
-  background: #fff;
+  width: 350px;
+  height: 60px;
+  background: rgba(19, 17, 25, 1);
   border-radius: 20px;
   border: none;
   z-index: 1;
@@ -53,11 +51,11 @@
 }
 
 .buttoncont > button > span {
+  font-family: "Lexend Deca", sans-serif;
   background: -webkit-linear-gradient(
-    45deg,
-    #de00bb 2.82%,
-    #8a6cf8 44.93%,
-    #00d8e6 95.55%
+    90deg,
+    rgba(56, 86, 239, 1),
+    rgba(193, 75, 234, 0.82)
   );
   background-clip: border-box;
   -webkit-background-clip: text;
@@ -65,52 +63,81 @@
 }
 
 .buttoncont > button:hover {
-  font-size: 22px;
+  font-size: 34px;
   box-shadow: 4px 4px 4px rgba(126, 17, 181, 0.7);
 }
 
 @media (max-width: 1200px) {
+  .container {
+    min-width: 910px;
+  }
   .container > h1 {
-    font-size: 45px;
-    margin-bottom: 10px;
+    font-size: 55px;
   }
   .buttoncont {
-    width: 287.1px;
-    height: 54.9px;
+    width: 300px;
   }
   .buttoncont > button {
-    font-size: 18px;
-    width: 277px;
-    height: 45px;
+    font-size: 28px;
+    width: 290px;
   }
   .buttoncont > button:hover {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media (max-width: 1000px) {
+  .container {
+    min-width: 755px;
+  }
   .container > h1 {
-    font-size: 40px;
+    font-size: 50px;
   }
 }
 @media (max-width: 768px) {
+  .container {
+    min-width: 640px;
+  }
   .container > h1 {
-    font-size: 35px;
+    font-size: 45px;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 642px) {
+  .container {
+    justify-content: center;
+    min-width: 0;
+  }
   .container > h1 {
     text-align: center;
   }
+}
+@media (max-width: 360px) {
   .buttoncont {
-    width: 224px;
-    height: 42.7px;
+    width: 270px;
+    height: 70px;
   }
   .buttoncont > button {
-    font-size: 16px;
-    width: 218px;
-    height: 36.7px;
+    font-size: 24px;
+    width: 260px;
   }
   .buttoncont > button:hover {
-    font-size: 18px;
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 300px) {
+  .container > h1 {
+    font-size: 40px;
+  }
+  .buttoncont {
+    width: 220px;
+    height: 50px;
+  }
+  .buttoncont > button {
+    font-size: 20px;
+    width: 210px;
+    height: 40px;
+  }
+  .buttoncont > button:hover {
+    font-size: 22px;
   }
 }

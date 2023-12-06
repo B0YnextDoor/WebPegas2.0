@@ -1,63 +1,76 @@
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-bottom: 25px;
+  min-width: 1065px;
+  margin-bottom: 80px;
   position: relative;
 }
 
 .container > h1 {
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 900;
-  margin-bottom: 20px;
-  background: -webkit-linear-gradient(
-    90deg,
-    #de00bb 2.82%,
-    #8a6cf8 44.93%,
-    #00d8e6 95.55%
-  );
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: center;
+  margin-bottom: 50px;
+  color: rgba(208, 100, 255, 1);
+  text-align: left;
+  font-family: "Lexend Deca", sans-serif;
 }
 
 .slidercont {
+  display: flex;
+  justify-content: center;
   position: relative;
-  width: 400px;
-}
-
-.swiper {
-  width: 500px;
+  width: 1065px;
+  --swiper-navigation-sides-offset: 5px;
+  --swiper-navigation-color: white;
+  --swiper-pagination-color: white;
+  --swiper-pagination-bullet-inactive-color: white;
+  --swiper-pagination-bullet-inactive-opacity: 0.7;
 }
 
 .card {
-  background-color: white;
+  background: linear-gradient(
+    180deg,
+    rgba(56, 86, 239, 1),
+    rgba(193, 75, 234, 0.82)
+  );
   border-radius: 20px;
   border: 2px solid rgb(131, 94, 165);
   box-shadow: 2px 2px 4px #8a6cf8;
   width: 400px;
   height: 400px;
-  color: #111;
+  color: #fff;
   font-size: 22px;
+  margin-left: 10%;
 }
 
 .card > div > span {
+  font-weight: 600;
   font-size: 32px;
+  margin-left: 20px;
+  font-family: "Lexend Deca", sans-serif;
 }
 
 .boxval {
+  font-family: "Lexend Deca", sans-serif;
   padding: 20px;
-  color: #111;
+  color: #fff;
 }
 
 @media (max-width: 1200px) {
+  .container {
+    min-width: 910px;
+  }
+  .slidercont {
+    width: 910px;
+  }
+  .swiper {
+    gap: 30px;
+  }
   .container > h1 {
-    font-size: 45px;
-    margin-bottom: 10px;
+    font-size: 55px;
   }
   .card {
-    width: 300px;
+    width: 350px;
   }
   .card > div > span {
     font-size: 28px;
@@ -67,14 +80,19 @@
   }
 }
 @media (max-width: 1000px) {
-  .container > h1 {
-    font-size: 40px;
+  .container {
+    min-width: 755px;
   }
-  .swiper {
-    width: 400px;
+  .slidercont {
+    width: 755px;
+    --swiper-navigation-size: 30px;
+  }
+  .container > h1 {
+    font-size: 50px;
   }
   .card {
-    width: 250px;
+    width: 300px;
+    height: 350px;
   }
   .card > div > span {
     font-size: 26px;
@@ -83,55 +101,91 @@
     padding: 10px;
     font-size: 18px;
   }
-  .slidercont {
-    margin-left: 25%;
-  }
 }
 @media (max-width: 768px) {
+  .container {
+    min-width: 640px;
+  }
+  .slidercont {
+    width: 640px;
+  }
   .container > h1 {
-    font-size: 35px;
+    font-size: 45px;
+  }
+  .swiper {
+    width: 370px;
+  }
+}
+@media (max-width: 642px) {
+  .container {
+    justify-content: center;
+    min-width: 0;
+  }
+  .slidercont {
+    width: auto;
+    --swiper-navigation-sides-offset: 10px;
+  }
+  .container > h1 {
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .slidercont {
+    --swiper-navigation-size: 20px;
+    --swiper-navigation-sides-offset: 7px;
+  }
+}
+
+@media (max-width: 400px) {
+  .slidercont {
+    --swiper-navigation-sides-offset: 13px;
   }
   .swiper {
     width: 300px;
   }
-  .slidercont {
-    margin-left: 10%;
-  }
-}
-@media (max-width: 530px) {
   .card {
-    width: 300px;
-    height: 310px;
+    width: 250px;
+    height: 400px;
   }
   .card > div > span {
     font-size: 24px;
   }
   .boxval {
-    padding: 5px;
     font-size: 18px;
   }
-  .slidercont {
-    --swiper-navigation-size: 20px;
-    --swiper-navigation-sides-offset: 5px;
-    --swiper-navigation-color: #8a6cf8;
-    width: 310px;
-    margin-left: 0;
-  }
 }
-@media (max-width: 320px) {
-  .card {
-    width: 230px;
-    height: 240px;
+
+@media (max-width: 300px) {
+  .swiper {
+    width: 250px;
   }
-  .slidercont {
-    width: 240px;
-    --swiper-navigation-size: 15px;
+  .container > h1 {
+    font-size: 40px;
+  }
+  .card {
+    width: 200px;
+    height: 300px;
   }
   .card > div > span {
-    font-size: 20px;
+    font-size: 18px;
   }
   .boxval {
-    padding: 5px;
     font-size: 14px;
+  }
+}
+
+@media (max-width: 260px) {
+  .swiper {
+    width: 240px;
+  }
+  .card {
+    width: 190px;
+    height: 280px;
+  }
+  .card > div > span {
+    font-size: 16px;
+  }
+  .boxval {
+    font-size: 12px;
   }
 }

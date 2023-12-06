@@ -8,14 +8,16 @@ export const Projects = () => {
     <div className={styles.container}>
       <h1>Наши проекты</h1>
       <ProjectsList />
-      <div className={styles.buttoncont}>
-        <button
-          onClick={() => {
-            navigate("/projects/0");
-          }}
-        >
-          <span>Все проекты</span>
-        </button>
+      <div className={styles.cont}>
+        <div className={styles.buttoncont}>
+          <button
+            onClick={() => {
+              navigate("/projects/0");
+            }}
+          >
+            <span>Все проекты</span>
+          </button>
+        </div>
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 .buttoncontainer {
-  width: 320px;
+  width: 290px;
   height: 61px;
   background: linear-gradient(
     90deg,
@@ -19,7 +19,7 @@
   font-weight: 600;
   text-align: center;
   cursor: pointer;
-  width: 310px;
+  width: 280px;
   height: 50px;
   background: #fff;
   border-radius: 20px;
@@ -47,12 +47,12 @@
 
 @media (max-width: 1200px) {
   .buttoncontainer {
-    width: 287.1px;
+    width: 260px;
     height: 54.9px;
   }
   .buttoncontainer > button {
     font-size: 18px;
-    width: 277px;
+    width: 250px;
     height: 45px;
   }
   .buttoncontainer > button:hover {
@@ -61,12 +61,12 @@
 }
 @media (max-width: 480px) {
   .buttoncontainer {
-    width: 224px;
+    width: 200px;
     height: 42.7px;
   }
   .buttoncontainer > button {
     font-size: 16px;
-    width: 218px;
+    width: 190px;
     height: 36.7px;
   }
   .buttoncontainer > button:hover {
@@ -75,12 +75,12 @@
 }
 @media (max-width: 427px) {
   .buttoncontainer {
-    width: 220px;
+    width: 180px;
     height: 35.25px;
   }
   .buttoncontainer > button {
     font-size: 14px;
-    width: 212px;
+    width: 170px;
     height: 30.25px;
   }
   .buttoncontainer > button:hover {
