@@ -87,7 +87,26 @@
   }
 }
 
-@media (max-width: 427px) {
+@media (max-width: 430px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+  .container > div {
+    width: 140px;
+    height: 30px;
+    border-radius: 6px;
+  }
+  .container > div > p {
+    font-size: 7px;
+    margin: 0 0 0 7px;
+  }
+  .container > div > img {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* @media (max-width: 427px) {
   .container > div {
     height: 50px;
   }
@@ -109,4 +128,4 @@
     width: 20px;
     height: 20px;
   }
-}
+} */

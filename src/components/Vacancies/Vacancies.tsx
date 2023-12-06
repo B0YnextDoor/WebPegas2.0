@@ -22,7 +22,7 @@ export const Vacancies = () => {
           </button>
         </div>
         <div className={styles.text} style={isShown ? {} : { display: "none" }}>
-          <p>Обязанности:</p>
+          <p className={styles.texthead}>Обязанности:</p>
           <p>
             Image classification, object detection, semantic segmentation, в том
             числе подходы Zero-Shot, One-Shot и Few-Shot Learning.
@@ -35,7 +35,7 @@ export const Vacancies = () => {
             <br />
             Классические алгоритмы компьютерного зрения.
           </p>
-          <p>Требования:</p>
+          <p className={styles.texthead}>Требования:</p>
           <p>
             Опыт работы или практических проектов в области машинного обучения
             или опыт участия в прикладных исследованиях с математическим
@@ -62,7 +62,7 @@ export const Vacancies = () => {
             Проактивность, готовность вникать в задачу
             <br /> Качественный чистый код
           </p>
-          <p>
+          <p className={styles.texthead}>
             Готов откликнуться на нашу вакансию?
             <br />
             Пиши нам в{" "}

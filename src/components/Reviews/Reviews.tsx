@@ -6,7 +6,7 @@ import { useMediaQuery } from "@mui/material";
 
 export const Reviews = () => {
   const matches = useMediaQuery("(max-width: 768px)");
-  const nav = useMediaQuery("(max-width: 400px)");
+  const nav = useMediaQuery("(max-width: 430px)");
   return (
     <div className={styles.container}>
       <h1>Отзывы</h1>

@@ -110,7 +110,30 @@
     text-align: center;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 430px) {
+  .container > h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  .cont {
+    margin-top: 20px;
+  }
+  .buttoncont {
+    width: 213px;
+    height: 44px;
+    border-radius: 15px;
+  }
+  .buttoncont > button {
+    font-size: 19px;
+    width: 205px;
+    height: 38px;
+    border-radius: 15px;
+  }
+  .buttoncont > button:hover {
+    font-size: 21px;
+  }
+}
+/* @media (max-width: 360px) {
   .buttoncont {
     width: 270px;
     height: 70px;
@@ -140,4 +163,4 @@
   .buttoncont > button:hover {
     font-size: 22px;
   }
-}
+} */
