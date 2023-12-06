@@ -73,21 +73,7 @@
     font-size: 18px;
   }
 }
-@media (max-width: 430px) {
-  .buttoncontainer {
-    width: 120px;
-    height: 26px;
-  }
-  .buttoncontainer > button {
-    font-size: 8px;
-    width: 110px;
-    height: 21px;
-  }
-  .buttoncontainer > button:hover {
-    font-size: 10px;
-  }
-}
-/* @media (max-width: 427px) {
+@media (max-width: 427px) {
   .buttoncontainer {
     width: 180px;
     height: 35.25px;
@@ -100,4 +86,4 @@
   .buttoncontainer > button:hover {
     font-size: 16px;
   }
-} */
+}

@@ -47,17 +47,9 @@
     padding-left: 10px;
   }
 }
-@media (max-width: 430px) {
-  .about {
-    font-size: 12px;
-    padding-left: 0px;
-  }
-  .about > p {
-    max-width: 287px;
-  }
-}
-/* @media (max-width: 360px) {
+
+@media (max-width: 360px) {
   .about {
     margin-left: 5%;
   }
-} */
+}

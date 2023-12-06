@@ -104,42 +104,26 @@
     padding: 5px 13px 5px 0px;
   }
 }
+@media (max-width: 525px) {
+  .number {
+    display: none;
+  }
+}
 @media (max-width: 480px) {
   .header > img {
     margin-top: 5px;
-  }
-  .number {
-    display: none;
   }
   .navbar > li > button {
     font-size: 14px;
     margin: 20px 0px;
   }
 }
-
-@media (max-width: 430px) {
-  .logo {
-    display: block;
-    width: 58px;
-    height: 10px;
-    margin-right: 5px;
-    margin-top: 20px;
-  }
-  .header > img {
-    margin-top: 5px;
-    margin-left: 5px;
-  }
-  .number {
-    margin-top: 6px;
-    font-size: 7px;
-  }
+@media (max-width: 442px) {
   .navbar > li > button {
-    font-size: 6px;
-    margin: 20px 0px;
+    font-size: 12px;
   }
 }
-
-/* @media (max-width: 375px) {
+@media (max-width: 375px) {
   .navbar > li > button {
     padding-right: 7px;
   }
@@ -160,4 +144,4 @@
   .navbar > li > button {
     font-size: 10px;
   }
-} */
+}

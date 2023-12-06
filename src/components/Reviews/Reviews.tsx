@@ -6,7 +6,7 @@ import { useMediaQuery } from "@mui/material";
 
 export const Reviews = () => {
   const matches = useMediaQuery("(max-width: 768px)");
-  const nav = useMediaQuery("(max-width: 430px)");
+  const nav = useMediaQuery("(max-width: 400px)");
   return (
     <div className={styles.container}>
       <h1>Отзывы</h1>
@@ -29,7 +29,7 @@ export const Reviews = () => {
           {slides.map((el, idx) => (
             <SwiperSlide key={idx}>
               <div className={styles.card}>
-                <div style={{ height: "15%" }}>
+                <div>
                   <span>{el.name}</span>
                 </div>
                 <div
