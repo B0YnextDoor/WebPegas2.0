@@ -125,6 +125,7 @@
 }
 @media (max-width: 375px) {
   .navbar > li > button {
+    margin-top: 0px;
     padding-right: 7px;
   }
   .navbar {
