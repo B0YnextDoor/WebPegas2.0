@@ -21,7 +21,7 @@ export const Reviews = () => {
           }}
           loop={true}
           grabCursor={true}
-          spaceBetween={30}
+          spaceBetween={20}
           centeredSlides={matches}
           slidesPerView={matches ? 1 : 2}
           className={styles.swiper}
