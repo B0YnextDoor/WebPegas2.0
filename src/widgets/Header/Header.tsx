@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import styles from "./Header.module.css";
 import { HeaderNav } from "./NavBar";
 import { animateScroll as scroll } from "react-scroll";
+import { TriggerHeader } from "../triger/triger";
 
 export const Header = () => {
   const navigate = useNavigate();
@@ -41,22 +42,28 @@ export const Header = () => {
     }
   };
   return (
-    <div className={styles.header}>
-      <img
-        className={styles.logo}
-        src="/logo.svg"
-        alt=""
-        width={251}
-        height={59}
-      />
-      <ul className={styles.navbar}>
-        {HeaderNav.map((el) => (
-          <li key={el}>
-            <button onClick={(e) => handleClick(e)}>{el}</button>
-          </li>
-        ))}
-      </ul>
-      <h3 className={styles.number}>+7 499 325 45 25</h3>
-    </div>
+    <TriggerHeader>
+      <div className={styles.header}>
+        {/* <Trigger> */}
+        <img
+          className={styles.logo}
+          src="/logo.svg"
+          alt=""
+          width={251}
+          height={59}
+        />
+        {/* </Trigger> */}
+        <ul className={styles.navbar}>
+          {HeaderNav.map((el) => (
+            <li key={el}>
+              <button onClick={(e) => handleClick(e)}>{el}</button>
+            </li>
+          ))}
+        </ul>
+        {/* <Trigger> */}
+        <h3 className={styles.number}>+7 499 325 45 25</h3>
+        {/* </Trigger> */}
+      </div>
+    </TriggerHeader>
   );
 };

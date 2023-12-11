@@ -1,15 +1,19 @@
 import { ServicesList } from "../../widgets/ServicesList/ServisesList";
+import { TriggerHeader } from "../../widgets/triger/triger";
 import styles from "./Services.module.css";
 
 export const Services = () => {
   return (
     <div className={styles.container}>
-      <h1>Услуги</h1>
-      {/* <img src="/services.svg" alt="" width={186} height={59} /> */}
-      <ServicesList />
-      <div className={styles.astrocont}>
+      <TriggerHeader className={styles.animcont}>
+        <h1>Услуги</h1>
+      </TriggerHeader>
+      <TriggerHeader>
+        <ServicesList />
+      </TriggerHeader>
+      <TriggerHeader className={styles.astrocont}>
         <img src="/astronaut.svg" alt="" width={300} height={300} />
-      </div>
+      </TriggerHeader>
     </div>
   );
 };
