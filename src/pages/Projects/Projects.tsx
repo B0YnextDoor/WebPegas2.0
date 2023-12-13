@@ -11,7 +11,7 @@ import {
 import { Header } from "../../widgets/Header/Header";
 import { slides } from "./ProjectList";
 import { useParams } from "react-router-dom";
-import { Trigger, TriggerHeader } from "../../widgets/triger/triger";
+import { Trigger } from "../../widgets/triger/triger";
 
 export const Projects = () => {
   const { id } = useParams();
