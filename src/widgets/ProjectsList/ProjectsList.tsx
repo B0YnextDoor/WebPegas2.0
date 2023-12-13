@@ -9,19 +9,26 @@ export const ProjectsList = () => {
   return (
     <div className={styles.container}>
       <div>
-        <label>SEMILI AI</label>
+        <label>SaluteBot</label>
         <div
           style={{
-            backgroundColor: "rgb(21, 66, 52)",
+            backgroundColor: "rgb(255, 255, 255)",
           }}
         >
           <div
             style={{
-              backgroundImage: "url('/NeuralNetsSemili1.jpg')",
+              backgroundImage: "url('/SaluteBot.jpg')",
               backgroundSize: "cover",
             }}
           />
-          <button id="13" onClick={(e) => handleClick(e)}>
+          <button
+            id="7"
+            style={{
+              color: "rgb(0, 0, 0)",
+              borderColor: "rgb(237, 153, 55)",
+            }}
+            onClick={(e) => handleClick(e)}
+          >
             К проекту
           </button>
         </div>
