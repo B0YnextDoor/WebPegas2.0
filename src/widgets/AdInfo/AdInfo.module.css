@@ -77,6 +77,9 @@
 }
 
 @media (max-width: 480px) {
+  .container {
+    flex-direction: column-reverse;
+  }
   .container > div {
     margin-bottom: 25px;
     width: 90%;
