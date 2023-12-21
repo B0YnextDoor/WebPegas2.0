@@ -2,9 +2,12 @@ import { CustomButton } from "../CustomButton/CustomButton";
 import { TriggerHeader } from "../triger/triger";
 import styles from "./Info.module.css";
 
-export const Info = () => {
+export const Info = ({ show }: any) => {
   return (
-    <div className={styles.container}>
+    <div
+      className={styles.containerinfo}
+      style={show ? { display: "none" } : {}}
+    >
       <TriggerHeader className={styles.animcont}>
         <h1>Digital-агентство</h1>
       </TriggerHeader>

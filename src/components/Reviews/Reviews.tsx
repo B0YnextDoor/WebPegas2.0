@@ -53,30 +53,3 @@ export const Reviews = () => {
     </div>
   );
 };
-
-// {matches ? (
-
-//   ) : (
-//     <Swiper
-//       modules={[EffectCards]}
-//       effect={"cards"}
-//       cardsEffect={{ slideShadows: false }}
-//       loop={true}
-//       grabCursor={true}
-//       className={styles.swiper}
-//     >
-//       {slides.map((el, idx) => (
-//         <SwiperSlide key={idx}>
-//           <div className={styles.card}>
-//             <div style={{ textAlign: "center" }}>
-//               <span style={{ fontWeight: 600, color: "black" }}>
-//                 {el.name}
-//               </span>
-//             </div>
-//             <div style={{ border: "1px solid #7737ff" }}></div>
-//             <div className={styles.boxval}>{el.value}</div>
-//           </div>
-//         </SwiperSlide>
-//       ))}
-//     </Swiper>
-//   )}

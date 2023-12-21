@@ -1,77 +1,70 @@
 import { useNavigate } from "react-router-dom";
 import styles from "./ProjectsList.module.css";
+import { useMediaQuery } from "@mui/material";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+import { ProjectColl } from "./Projects";
 
 export const ProjectsList = () => {
   const navigate = useNavigate();
+  const swip = useMediaQuery("(max-width: 480px)");
+  const nav = useMediaQuery("(max-width: 400px)");
   const handleClick = (e: any) => {
     navigate(`/projects/${e.target.id}`);
   };
   return (
-    <div className={styles.container}>
-      <div>
-        <label>SaluteBot</label>
+    <>
+      {!swip ? (
+        <div className={styles.container}>
+          {ProjectColl.map((proj, idx) => (
+            <ProjCard key={idx} proj={proj} handleClick={handleClick} />
+          ))}
+        </div>
+      ) : (
+        <Swiper
+          modules={[Navigation, Pagination]}
+          navigation={!nav}
+          pagination={{
+            enabled: nav,
+            type: "bullets",
+            dynamicBullets: true,
+          }}
+          loop={true}
+          grabCursor={true}
+          spaceBetween={20}
+          centeredSlides={true}
+          slidesPerView={1}
+          className={styles.swiper}
+        >
+          {ProjectColl.map((proj, idx) => (
+            <SwiperSlide key={idx}>
+              <ProjCard proj={proj} handleClick={handleClick} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      )}
+    </>
+  );
+};
+
+const ProjCard = ({ proj, handleClick }: any) => {
+  return (
+    <div className={styles.proj}>
+      <label>{proj.name}</label>
+      <div
+        style={{
+          backgroundColor: `${proj.color}`,
+        }}
+      >
         <div
           style={{
-            backgroundColor: "rgb(255, 255, 255)",
+            backgroundImage: `${proj.img}`,
+            backgroundSize: "cover",
           }}
-        >
-          <div
-            style={{
-              backgroundImage: "url('/SaluteBot.jpg')",
-              backgroundSize: "cover",
-            }}
-          />
-          <button
-            id="7"
-            style={{
-              color: "rgb(0, 0, 0)",
-              borderColor: "rgb(237, 153, 55)",
-            }}
-            onClick={(e) => handleClick(e)}
-          >
-            К проекту
-          </button>
-        </div>
-      </div>
-      <div>
-        <label>FECIT SERVICE</label>
-        <div
-          style={{
-            backgroundColor: "rgb(13, 13, 13)",
-          }}
-        >
-          <div
-            style={{
-              backgroundImage: "url('/LandingsFecit.jpg')",
-              backgroundSize: "cover",
-            }}
-          />
-          <button id="1" onClick={(e) => handleClick(e)}>
-            К проекту
-          </button>
-        </div>
-      </div>
-      <div>
-        <label>BOLDO BLOG</label>
-        <div
-          style={{
-            backgroundColor: "rgb(255, 255, 255)",
-          }}
-        >
-          <div
-            style={{
-              backgroundImage: "url('/FunnelsBoldo.jpg')",
-              backgroundSize: "cover",
-            }}
-          />
-          <button
-            id="21"
-            style={{ color: "rgb(9, 39, 65)", borderColor: "blueviolet" }}
-            onClick={(e) => handleClick(e)}
-          >
-            К проекту
-          </button>
-        </div>
+        />
+        <button id={proj.id} style={proj.style} onClick={(e) => handleClick(e)}>
+          К проекту
+        </button>
       </div>
     </div>
   );

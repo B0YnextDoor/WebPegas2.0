@@ -6,17 +6,23 @@
   margin-bottom: 20px;
 }
 
-.container > div {
+.swiper {
+  --swiper-navigation-sides-offset: 1px;
+  --swiper-navigation-color: rgba(88, 60, 111, 1);
+  --swiper-navigation-size: 30px;
+}
+
+.proj {
   text-align: center;
 }
 
-.container > div > label {
+.proj > label {
   font-size: 33px;
   font-weight: 500;
   font-family: "Lexend Deca", sans-serif;
 }
 
-.container > div > div {
+.proj > div {
   margin-top: 20px;
   border-radius: 20px;
   display: flex;
@@ -25,13 +31,13 @@
   height: 510px;
 }
 
-.container > div > div > div {
+.proj > div > div {
   border-radius: 20px;
   width: 300px;
   height: 450px;
 }
 
-.container > div > div > button {
+.proj > div > button {
   width: 80%;
   font-size: 12px;
   padding: 10px 45px;
@@ -46,20 +52,20 @@
   transition-duration: 0.5s;
 }
 
-.container > div > div > button:hover {
+.proj > div > button:hover {
   width: 85%;
   font-size: 14px;
   border-color: blueviolet;
 }
 
 @media (max-width: 1200px) {
-  .container > div > label {
+  .proj > label {
     font-size: 30px;
   }
-  .container > div > div {
+  .proj > div {
     height: 480px;
   }
-  .container > div > div > div {
+  .proj > div > div {
     width: 280px;
     height: 420px;
   }
@@ -69,7 +75,7 @@
     display: grid;
     grid-template-columns: repeat(2, 280px);
   }
-  .container > div {
+  .proj {
     align-self: center;
     justify-self: center;
   }
@@ -78,14 +84,14 @@
   .container {
     gap: 30px;
   }
-  .container > div > label {
+  .proj > label {
     font-size: 28px;
   }
-  .container > div > div {
+  .proj > div {
     margin-top: 10px;
     height: 450px;
   }
-  .container > div > div > div {
+  .proj > div > div {
     width: 260px;
     height: 390px;
   }
@@ -95,49 +101,54 @@
     grid-template-columns: repeat(1, 300px);
     gap: 15px;
   }
-  .container > div > label {
+  .proj > label {
     font-size: 26px;
   }
-  .container > div > div {
+  .proj > div {
     height: 510px;
   }
-  .container > div > div > div {
+  .proj > div > div {
     width: 300px;
     height: 450px;
   }
 }
 
-@media (max-width: 360px) {
-  .container {
-    grid-template-columns: repeat(1, 250px);
-    gap: 10px;
+@media (max-width: 480px) {
+  .swiper {
+    width: 360px;
   }
-  .container > div > label {
+}
+
+@media (max-width: 360px) {
+  .swiper {
+    width: 300px;
+  }
+  .proj > label {
     font-size: 24px;
   }
-  .container > div > div {
+  .proj > div {
     height: 430px;
   }
-  .container > div > div > div {
+  .proj > div > div {
     width: 250px;
     height: 375px;
   }
 }
 @media (max-width: 300px) {
-  .container {
-    grid-template-columns: repeat(1, 220px);
+  .swiper {
+    width: 220px;
   }
-  .container > div > label {
+  .proj > label {
     font-size: 22px;
   }
-  .container > div > div {
+  .proj > div {
     height: 385px;
   }
-  .container > div > div > div {
+  .proj > div > div {
     width: 220px;
     height: 325px;
   }
-  .container > div > div > button {
+  .proj > div > button {
     padding: 10px 35px;
   }
 }

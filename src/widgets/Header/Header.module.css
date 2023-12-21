@@ -13,6 +13,19 @@
   color: rgba(6, 212, 231, 1);
 }
 
+.menu {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    rgba(34, 25, 36, 0.46),
+    rgba(49, 47, 84, 1),
+    rgba(24, 23, 41, 1)
+  );
+  padding: 0 10px 0px 10px;
+  width: 360px;
+  height: 80vh;
+}
+
 .logo {
   margin-left: 0px;
   margin-top: 40px;
@@ -110,39 +123,113 @@
   }
 }
 @media (max-width: 480px) {
-  .header > img {
-    margin-top: 5px;
+  .newhead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+    padding-top: 20px;
   }
-  .navbar > li > button {
-    font-size: 14px;
-    margin: 20px 0px;
-  }
-}
-@media (max-width: 442px) {
-  .navbar > li > button {
-    font-size: 12px;
-  }
-}
-@media (max-width: 375px) {
-  .navbar > li > button {
-    margin-top: 0px;
-    padding-right: 7px;
+  .newhead > button {
+    background: transparent;
+    border: none;
+    margin-top: -2px;
   }
   .navbar {
-    display: grid;
-    grid-template-columns: repeat(3, 90px);
-    justify-items: center;
-    margin-bottom: 15px;
+    color: #fff;
+    flex-direction: column;
+    width: 90%;
   }
   .navbar > li {
-    max-height: 25px;
-  }
-}
-@media (max-width: 280px) {
-  .navbar {
-    grid-template-columns: repeat(3, 70px);
+    width: 90%;
+    margin-bottom: 20px;
   }
   .navbar > li > button {
-    font-size: 10px;
+    font-size: 26px;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 100;
+  }
+  .navbar > li > button:hover {
+    text-decoration: none;
+  }
+  .number {
+    display: flex;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 460px) {
+  .newhead {
+    gap: 50px;
+  }
+  .number {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .menu {
+    width: 330px;
+  }
+  .newheadlogo {
+    width: 125px;
+    height: 29px;
+  }
+  .number {
+    font-size: 12px;
+  }
+  .newhead > button > img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 360px) {
+  .newhead {
+    gap: 30px;
+  }
+  .menu {
+    width: 240px;
+    height: 70vh;
+  }
+  .newlogo {
+    width: 125px;
+    height: 29px;
+  }
+  .menu > div > button > img {
+    width: 15px;
+    height: 15px;
+  }
+  .navbar > li > button {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .newhead {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 300px) {
+  .newheadlogo {
+    width: 100px;
+    height: 23.2px;
+  }
+}
+
+@media (max-width: 265px) {
+  .newhead {
+    gap: 10px;
+  }
+  .newhead > button > img {
+    width: 25px;
+    height: 25px;
+  }
+  .menu {
+    width: 200px;
+    height: 50vh;
   }
 }
