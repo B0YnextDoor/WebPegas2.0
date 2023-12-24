@@ -6,7 +6,7 @@ import {
 } from "../../pages/PortfolioOld/Portfolios";
 import { animateScroll as scroll } from "react-scroll";
 
-export const PortfolioCard: FC<IPortfolioProps> = ({ examples }) => {
+export const PortfolioCard: FC<IPortfolioProps> = ({ examples, show }) => {
   const [shownel, setShownEl] = useState<PortfolioExmplType>({
     path: "",
     height: 0,
@@ -32,7 +32,7 @@ export const PortfolioCard: FC<IPortfolioProps> = ({ examples }) => {
     scroll.scrollToTop({ smooth: false, delay: 0, duration: 0 });
   }, []);
   return (
-    <div className="cardscontainer">
+    <div className="cardscontainer" style={show ? { display: "none" } : {}}>
       <div className="btncont">
         {examples.map((el: any) => (
           <div key={el.path} className="portbtn">

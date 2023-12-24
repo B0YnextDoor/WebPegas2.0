@@ -12,11 +12,15 @@ import { Header } from "../../widgets/Header/Header";
 import { slides } from "./ProjectList";
 import { useParams } from "react-router-dom";
 import { Trigger } from "../../widgets/triger/triger";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { animateScroll as scroll } from "react-scroll";
 
 export const Projects = () => {
   const { id } = useParams();
   const [show, setShow] = useState(false);
+  useEffect(() => {
+    scroll.scrollToTop({ smooth: false, delay: 0, duration: 0 });
+  }, []);
   return (
     <div className={styles.container}>
       <Header show={show} setShow={setShow} />

@@ -1,5 +1,6 @@
 export interface IPortfolioProps {
   examples: PortfolioExmplType[];
+  show: boolean;
 }
 
 type PortfolioType = {

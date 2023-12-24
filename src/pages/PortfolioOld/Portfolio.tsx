@@ -4,6 +4,7 @@ import { Portfolios } from "./Portfolios";
 import { ErrorPage } from "../../widgets/ErrorPage/ErrorPage";
 import { PortfolioCard } from "../../widgets/PortfolioCard/PortfolioCard";
 import { Header } from "../../widgets/Header/Header";
+import { useState } from "react";
 
 export const Portfolio = () => {
   const { id } = useParams();
@@ -13,13 +14,14 @@ export const Portfolio = () => {
     );
   }
   const portfolio = Portfolios[+id - 1];
+  const [show, setShow] = useState(false);
   return (
     <div className="container">
-      <Header />
+      <Header show={show} setShow={setShow} />
       <div className="portfolio">
         <>
-          <h2>{portfolio.name}</h2>
-          <PortfolioCard examples={portfolio.examples} />
+          <h2 style={show ? { display: "none" } : {}}>{portfolio.name}</h2>
+          <PortfolioCard examples={portfolio.examples} show={show} />
         </>
       </div>
     </div>
