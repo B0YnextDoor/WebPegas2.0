@@ -14,22 +14,22 @@ export const Header = ({ show, setShow }: any) => {
     switch (e.target.innerHTML) {
       case "Услуги": {
         navigate("/");
-        scroll.scrollTo(800);
+        scroll.scrollTo(!newhead ? 800 : 600);
         break;
       }
       case "О нас": {
         navigate("/");
-        scroll.scrollTo(1300);
+        scroll.scrollTo(!newhead ? 1300 : 1800);
         break;
       }
       case "Наши проекты": {
         navigate("/");
-        scroll.scrollTo(1700);
+        scroll.scrollTo(!newhead ? 1700 : 2300);
         break;
       }
       case "Отзывы": {
         navigate("/");
-        scroll.scrollTo(2500);
+        scroll.scrollTo(!newhead ? 2500 : 3200);
         break;
       }
       case "Вакансии": {
