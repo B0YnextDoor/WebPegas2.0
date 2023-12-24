@@ -12,21 +12,27 @@ import { Header } from "../../widgets/Header/Header";
 import { slides } from "./ProjectList";
 import { useParams } from "react-router-dom";
 import { Trigger } from "../../widgets/triger/triger";
+import { useState } from "react";
 
 export const Projects = () => {
   const { id } = useParams();
+  const [show, setShow] = useState(false);
   return (
     <div className={styles.container}>
-      <Header />
+      <Header show={show} setShow={setShow} />
       <Trigger>
         <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            backgroundImage: "url('/portfoliobckground.jpg')",
-            backgroundPosition: "center",
-          }}
+          style={
+            show
+              ? { display: "none" }
+              : {
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  backgroundImage: "url('/portfoliobckground.jpg')",
+                  backgroundPosition: "center",
+                }
+          }
         >
           <Swiper
             onSwiper={(swiper) => {

@@ -64,7 +64,9 @@ export const Header = ({ show, setShow }: any) => {
           <h3 className={styles.number}>+7 499 325 45 25</h3>
         </div>
       ) : (
-        <div style={{ width: "100%" }}>
+        <div
+          style={{ width: "100%", display: "flex", justifyContent: "center" }}
+        >
           <div
             className={styles.newhead}
             style={show ? { display: "none" } : {}}
