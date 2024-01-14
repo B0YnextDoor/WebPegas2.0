@@ -8,7 +8,7 @@ export const Footer = () => {
     <div className={styles.container}>
       <div className={styles.first}>
         ООО "ВЕБ-ПЕГАС", ИНН 5300004679, ОГРН 1225300002597
-        <br />© 2023 webpegas.pro. Все права защищены.
+        <br />© 2024 webpegas.pro. Все права защищены.
       </div>
       <div className={styles.socnets}>
         <div>
